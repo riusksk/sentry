@@ -5,7 +5,7 @@ import {Location} from 'history';
 import omit from 'lodash/omit';
 
 import InlineSvg from 'app/components/inlineSvg';
-import Link from 'app/components/links/link';
+import Link, {LinkProps} from 'app/components/links/linkV2';
 
 import EventView, {Field, Sort, isFieldSortable} from './eventView';
 import {MetaType} from './utils';
@@ -82,7 +82,7 @@ class SortLink extends React.Component<Props> {
   }
 }
 
-type StyledLinkProps = Link['props'] & {align: Alignments};
+type StyledLinkProps = LinkProps & {align: Alignments};
 
 const StyledLink = styled((props: StyledLinkProps) => {
   const forwardProps = omit(props, ['align']);

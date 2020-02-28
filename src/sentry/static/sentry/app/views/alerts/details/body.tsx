@@ -19,6 +19,7 @@ import EventView from 'app/views/eventsV2/eventView';
 import Feature from 'app/components/acl/feature';
 import InlineSvg from 'app/components/inlineSvg';
 import Link from 'app/components/links/link';
+import LinkV2 from 'app/components/links/linkV2';
 import NavTabs from 'app/components/navTabs';
 import Placeholder from 'app/components/placeholder';
 import SeenByList from 'app/components/seenByList';
@@ -283,7 +284,7 @@ const Sidebar = styled('div')`
   }
 `;
 
-const SideHeaderLink = styled(Link)`
+const SideHeaderLink = styled(LinkV2)`
   display: grid;
   grid-auto-flow: column;
   align-items: center;

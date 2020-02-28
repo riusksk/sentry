@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import isPropValid from '@emotion/is-prop-valid';
 
 import {t} from 'app/locale';
-import Link from 'app/components/links/link';
+import Link from 'app/components/links/linkV2';
 import InlineSvg from 'app/components/inlineSvg';
 import space from 'app/styles/space';
 import {Event, Organization} from 'app/types';

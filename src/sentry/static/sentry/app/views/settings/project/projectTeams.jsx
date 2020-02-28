@@ -7,7 +7,7 @@ import {addTeamToProject, removeTeamFromProject} from 'app/actionCreators/projec
 import {openCreateTeamModal} from 'app/actionCreators/modal';
 import {t} from 'app/locale';
 import AsyncView from 'app/views/asyncView';
-import Link from 'app/components/links/link';
+import Link from 'app/components/links/linkV2';
 import SettingsPageHeader from 'app/views/settings/components/settingsPageHeader';
 import TeamSelect from 'app/views/settings/components/teamSelect';
 import Tooltip from 'app/components/tooltip';
@@ -49,20 +49,16 @@ class ProjectTeams extends AsyncView {
   };
 
   handleRemovedTeam = teamSlug => {
-    this.setState(prevState => {
-      return {
-        projectTeams: this.state.projectTeams.filter(team => {
-          return team.slug !== teamSlug;
-        }),
-      };
+    this.setState({
+      projectTeams: this.state.projectTeams.filter(team => {
+        return team.slug !== teamSlug;
+      }),
     });
   };
 
   handleAddedTeam = team => {
-    this.setState(prevState => {
-      return {
-        projectTeams: this.state.projectTeams.concat([team]),
-      };
+    this.setState({
+      projectTeams: this.state.projectTeams.concat([team]),
     });
   };
 

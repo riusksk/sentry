@@ -54,7 +54,7 @@ const ProjectHeaderProjectSelector = withRouter(
     render() {
       return (
         <ProjectSelector {...this.props} onSelect={this.handleSelect}>
-          {({getActorProps, selectedItem, activeProject}) => (
+          {({getActorProps, activeProject}) => (
             <DropdownLabel>
               {activeProject ? (
                 <IdBadge
