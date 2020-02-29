@@ -12,6 +12,7 @@ type QueryPanelProps = {
 
 export default class QueryPanel extends React.Component<QueryPanelProps> {
   render() {
+    console.log('QueryPanelCloseLink');
     const {title, onClose} = this.props;
     return (
       <QueryPanelContainer>

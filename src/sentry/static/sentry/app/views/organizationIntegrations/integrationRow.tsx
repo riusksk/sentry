@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import Link from 'app/components/links/linkV2';
+import Link from 'app/components/links/baseLink';
 import {PanelItem} from 'app/components/panels';
 import PluginIcon from 'app/plugins/components/pluginIcon';
 import space from 'app/styles/space';

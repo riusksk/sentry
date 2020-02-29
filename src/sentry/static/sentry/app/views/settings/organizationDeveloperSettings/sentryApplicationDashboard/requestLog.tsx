@@ -11,7 +11,7 @@ import DateTime from 'app/components/dateTime';
 import DropdownControl, {DropdownItem} from 'app/components/dropdownControl';
 import DropdownButton from 'app/components/dropdownButton';
 import Tag from 'app/views/settings/components/tag';
-import Link from 'app/components/links/linkV2';
+import Link from 'app/components/links/baseLink';
 import LoadingIndicator from 'app/components/loadingIndicator';
 import Checkbox from 'app/components/checkbox';
 import Button from 'app/components/button';

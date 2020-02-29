@@ -10,7 +10,7 @@ import UserAvatar from 'app/components/avatar/userAvatar';
 import CommitLink from 'app/components/commitLink';
 import Hovercard from 'app/components/hovercard';
 import InlineSvg from 'app/components/inlineSvg';
-import Link from 'app/components/links/link';
+import BaseLink from 'app/components/links/baseLink';
 import TextOverflow from 'app/components/textOverflow';
 import TimeSince from 'app/components/timeSince';
 import space from 'app/styles/space';
@@ -46,6 +46,7 @@ class CommitRow extends React.Component<Props> {
             accountSettings: <StyledLink to="/settings/account/emails/" />,
             inviteUser: (
               <StyledLink
+                to="#"
                 onClick={() =>
                   openInviteMembersModal({
                     initialData: [
@@ -115,7 +116,7 @@ const EmailWarning = styled('div')`
   margin: -4px;
 `;
 
-const StyledLink = styled(Link)`
+const StyledLink = styled(BaseLink)`
   color: ${p => p.theme.textColor};
   border-bottom: 1px dotted ${p => p.theme.textColor};
 

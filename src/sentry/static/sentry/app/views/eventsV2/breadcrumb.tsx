@@ -4,7 +4,7 @@ import {Location} from 'history';
 
 import {t} from 'app/locale';
 import {Event, Organization} from 'app/types';
-import Link from 'app/components/links/linkV2';
+import Link from 'app/components/links/baseLink';
 import InlineSvg from 'app/components/inlineSvg';
 import space from 'app/styles/space';
 

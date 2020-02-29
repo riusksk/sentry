@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import Link from 'app/components/links/linkV2';
+import Link from 'app/components/links/baseLink';
 import {t} from 'app/locale';
 import DateTime from 'app/components/dateTime';
 import FileSize from 'app/components/fileSize';

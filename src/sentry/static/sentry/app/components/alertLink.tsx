@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import React from 'react';
 import {LocationDescriptor} from 'history';
 
-import Link from 'app/components/links/linkV2';
+import Link from 'app/components/links/baseLink';
 import InlineSvg from 'app/components/inlineSvg';
 import space from 'app/styles/space';
 

@@ -37,6 +37,8 @@ export default class Aggregations extends React.Component<AggregationsProps> {
   render() {
     const {value, columns, disabled} = this.props;
 
+    console.log('LinkLinkLinkLinkLink');
+
     return (
       <div>
         <div>

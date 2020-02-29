@@ -5,7 +5,7 @@ import {Location} from 'history';
 import omit from 'lodash/omit';
 
 import InlineSvg from 'app/components/inlineSvg';
-import Link, {LinkProps} from 'app/components/links/linkV2';
+import Link, {LinkProps} from 'app/components/links/baseLink';
 
 import EventView, {Field, Sort, isFieldSortable} from './eventView';
 import {MetaType} from './utils';

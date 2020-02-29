@@ -4,7 +4,7 @@ import {browserHistory} from 'react-router';
 import overflowEllipsis from 'app/styles/overflowEllipsis';
 import theme from 'app/utils/theme';
 import {IconBookmark} from 'app/icons/iconBookmark';
-import Link from 'app/components/links/linkV2';
+import Link from 'app/components/links/baseLink';
 
 import space from 'app/styles/space';
 import {callIfFunction} from 'app/utils/callIfFunction';

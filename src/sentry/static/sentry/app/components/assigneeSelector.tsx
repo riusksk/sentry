@@ -20,7 +20,7 @@ import DropdownBubble from 'app/components/dropdownBubble';
 import GroupStore from 'app/stores/groupStore';
 import Highlight from 'app/components/highlight';
 import InlineSvg from 'app/components/inlineSvg';
-import Link from 'app/components/links/link';
+import BaseLink from 'app/components/links/baseLink';
 import LoadingIndicator from 'app/components/loadingIndicator';
 import MemberListStore from 'app/stores/memberListStore';
 import ProjectsStore from 'app/stores/projectsStore';
@@ -284,7 +284,6 @@ const AssigneeSelectorComponent = createReactClass<Props, State>({
             menuFooter={
               <InviteMemberLink
                 data-test-id="invite-member"
-                disabled={loading}
                 onClick={() => openInviteMembersModal({source: 'assignee_selector'})}
               >
                 <MenuItemWrapper>
@@ -388,7 +387,7 @@ const MenuItemWrapper = styled('div')<{
     `};
 `;
 
-const InviteMemberLink = styled(Link)`
+const InviteMemberLink = styled(BaseLink)`
   color: ${p => p.theme.textColor};
 `;
 

@@ -24,6 +24,7 @@ import SentryTypes from 'app/sentryTypes';
 import localStorage from 'app/utils/localStorage';
 import space from 'app/styles/space';
 import withOrganization from 'app/utils/withOrganization';
+import BaseLink from 'app/components/links/baseLink';
 
 import {DEFAULT_EVENT_VIEW} from './data';
 import {getPrebuiltQueries, decodeScalar} from './utils';
@@ -279,12 +280,12 @@ class DiscoverLanding extends AsyncComponent<Props, State> {
             onQueryChange={this.handleQueryChange}
           />
           <Feature features={['organizations:discover']} organization={organization}>
-            <SwitchLink
-              href={`/organizations/${organization.slug}/discover/`}
+            <BaseLink
+              to={`/organizations/${organization.slug}/discover/`}
               onClick={this.onGoLegacyDiscover}
             >
               {t('Go to Legacy Discover')}
-            </SwitchLink>
+            </BaseLink>
           </Feature>
         </PageContent>
       );

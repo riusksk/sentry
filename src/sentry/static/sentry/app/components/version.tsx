@@ -7,7 +7,7 @@ import {WithRouterProps} from 'react-router/lib/withRouter';
 import {Organization} from 'app/types';
 import SentryTypes from 'app/sentryTypes';
 import GlobalSelectionLink from 'app/components/globalSelectionLink';
-import Link from 'app/components/links/linkV2';
+import Link from 'app/components/links/baseLink';
 import Tooltip from 'app/components/tooltip';
 import {IconCopy} from 'app/icons';
 import Clipboard from 'app/components/clipboard';
