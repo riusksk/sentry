@@ -3,7 +3,7 @@ import {MultiGrid, AutoSizer} from 'react-virtualized';
 import styled from '@emotion/styled';
 import {Organization} from 'app/types';
 import {t} from 'app/locale';
-import Link from 'app/components/links/baseLink';
+import BaseLink from 'app/components/links/baseLink';
 import Tooltip from 'app/components/tooltip';
 import Panel from 'app/components/panels/panel';
 import EmptyStateWarning from 'app/components/emptyStateWarning';
@@ -108,9 +108,9 @@ class ResultTable extends React.Component<Props> {
 
     return (
       <Tooltip title={t('Open event')}>
-        <Link to={`${basePath}events/${event.id}/`} external>
+        <BaseLink to={`${basePath}events/${event.id}/`} external>
           {event.id}
-        </Link>
+        </BaseLink>
       </Tooltip>
     );
   };
@@ -121,9 +121,9 @@ class ResultTable extends React.Component<Props> {
 
     return (
       <Tooltip title={t('Open issue')}>
-        <Link to={`${basePath}issues/${event['issue.id']}`} external>
+        <BaseLink to={`${basePath}issues/${event['issue.id']}`} external>
           {event['issue.id']}
-        </Link>
+        </BaseLink>
       </Tooltip>
     );
   };

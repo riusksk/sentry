@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import isPropValid from '@emotion/is-prop-valid';
 
 import {t} from 'app/locale';
-import Link from 'app/components/links/baseLink';
+import BaseLink from 'app/components/links/baseLink';
 import InlineSvg from 'app/components/inlineSvg';
 import space from 'app/styles/space';
 import {Event, Organization} from 'app/types';
@@ -64,27 +64,27 @@ const Pagination = (props: Props) => {
   return (
     <Paginator>
       <StyledIconLink
-        to={links.oldest}
+        to={links.oldest || '#'}
         disabled={links.previous === null || links.oldest === null}
       >
         <InlineSvg src="icon-prev" />
       </StyledIconLink>
       <StyledTextLink
         data-test-id="older-event"
-        to={links.previous}
+        to={links.previous || '#'}
         disabled={links.previous === null}
       >
         {t('Older')}
       </StyledTextLink>
       <StyledTextLink
+        to={links.next || '#'}
         data-test-id="newer-event"
-        to={links.next}
         disabled={links.next === null}
       >
         {t('Newer')}
       </StyledTextLink>
       <StyledIconLink
-        to={links.latest}
+        to={links.latest || '#'}
         disabled={links.next === null || links.latest === null}
         isLast
       >
@@ -94,7 +94,7 @@ const Pagination = (props: Props) => {
   );
 };
 
-const StyledTextLink = styled(Link, {shouldForwardProp: isPropValid})<{
+const StyledTextLink = styled(BaseLink, {shouldForwardProp: isPropValid})<{
   theme: any;
   disabled: boolean;
   isLast: boolean;

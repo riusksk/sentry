@@ -10,7 +10,7 @@ import DropdownMenu from 'app/components/dropdownMenu';
 import Hook from 'app/components/hook';
 import IdBadge from 'app/components/idBadge';
 import InlineSvg from 'app/components/inlineSvg';
-import Link from 'app/components/links/baseLink';
+import BaseLink from 'app/components/links/baseLink';
 import SentryTypes from 'app/sentryTypes';
 import SidebarDropdownMenu from 'app/components/sidebar/sidebarDropdownMenu.styled';
 import SidebarMenuItem, {getMenuItemStyles} from 'app/components/sidebar/sidebarMenuItem';
@@ -170,14 +170,14 @@ const SidebarDropdown = withApi(
 
 export default SidebarDropdown;
 
-const SentryLink = styled(Link)`
+const SentryLink = styled(BaseLink)`
   color: ${p => p.theme.white};
   &:hover {
     color: ${p => p.theme.white};
   }
 `;
 
-const UserSummary = styled(Link)`
+const UserSummary = styled(BaseLink)`
   ${getMenuItemStyles}
   padding: 10px 15px;
 `;

@@ -18,8 +18,7 @@ import Duration from 'app/components/duration';
 import EventView from 'app/views/eventsV2/eventView';
 import Feature from 'app/components/acl/feature';
 import InlineSvg from 'app/components/inlineSvg';
-import Link from 'app/components/links/link';
-import baseLink from 'app/components/links/baseLink';
+import BaseLink from 'app/components/links/baseLink';
 import NavTabs from 'app/components/navTabs';
 import Placeholder from 'app/components/placeholder';
 import SeenByList from 'app/components/seenByList';
@@ -153,6 +152,10 @@ export default class DetailsBody extends React.Component<Props> {
     );
   }
 
+  handlePreventDefault = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+  };
+
   render() {
     const {params, incident} = this.props;
 
@@ -175,7 +178,9 @@ export default class DetailsBody extends React.Component<Props> {
           <ActivityPageContent>
             <StyledNavTabs underlined>
               <li className="active">
-                <Link>{t('Activity')}</Link>
+                <BaseLink to="#" onClick={this.handlePreventDefault}>
+                  {t('Activity')}
+                </BaseLink>
               </li>
 
               <SeenByTab>
@@ -220,9 +225,8 @@ export default class DetailsBody extends React.Component<Props> {
                         slugs={incident && incident.projects}
                         orgId={params.orgId}
                       >
-                        {({initiallyLoaded, projects, fetching}) => (
+                        {({initiallyLoaded, projects}) => (
                           <SideHeaderLink
-                            disabled={!incident || fetching || !initiallyLoaded}
                             to={this.getDiscoverUrl(
                               ((initiallyLoaded && projects) as Project[]) || []
                             )}
@@ -284,7 +288,7 @@ const Sidebar = styled('div')`
   }
 `;
 
-const SideHeaderLink = styled(baseLink)`
+const SideHeaderLink = styled(BaseLink)`
   display: grid;
   grid-auto-flow: column;
   align-items: center;

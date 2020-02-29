@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 // eslint-disable-next-line import/no-named-default
 import {default as RouterLink} from 'react-router/lib/Link';
 import {Location, LocationDescriptor} from 'history';
@@ -30,5 +31,14 @@ const BaseLink = <T extends boolean>({
   ) : (
     <RouterLink to={to} {...props} />
   );
+
+BaseLink.propTypes = {
+  to: PropTypes.any.isRequired,
+  external: PropTypes.bool,
+  className: PropTypes.string,
+  blank: PropTypes.bool,
+  children: PropTypes.any,
+  onClick: PropTypes.func,
+};
 
 export default BaseLink;

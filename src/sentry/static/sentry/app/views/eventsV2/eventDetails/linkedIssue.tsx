@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import {t} from 'app/locale';
 import AsyncComponent from 'app/components/asyncComponent';
 import GroupChart from 'app/components/stream/groupChart';
-import Link from 'app/components/links/baseLink';
+import BaseLink from 'app/components/links/baseLink';
 import Placeholder from 'app/components/placeholder';
 import ProjectBadge from 'app/components/idBadge/projectBadge';
 import SeenByList from 'app/components/seenByList';
@@ -90,7 +90,7 @@ const IssueCardHeader = styled('div')`
   padding: ${space(1)};
 `;
 
-const StyledLink = styled(Link)`
+const StyledLink = styled(BaseLink)`
   justify-content: flex-start;
 `;
 

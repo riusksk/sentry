@@ -10,7 +10,7 @@ import Tooltip from 'app/components/tooltip';
 import {t} from 'app/locale';
 import space from 'app/styles/space';
 
-import Link from '../links/link';
+import BaseLink from '../links/baseLink';
 import TextOverflow from '../textOverflow';
 
 const LabelHook = HookOrDefault({
@@ -146,7 +146,7 @@ const getActiveStyle = ({active, theme}) => {
   `;
 };
 
-const StyledSidebarItem = styled(Link)`
+const StyledSidebarItem = styled(BaseLink)`
   display: flex;
   color: inherit;
   position: relative;

@@ -6,7 +6,7 @@ import {Panel, PanelItem} from 'app/components/panels';
 import {slideInLeft} from 'app/styles/animations';
 import Button from 'app/components/button';
 import GlobalSelectionHeader from 'app/components/organizations/globalSelectionHeader';
-import Link from 'app/components/links/link';
+import BaseLink from 'app/components/links/baseLink';
 import NavTabs from 'app/components/navTabs';
 import space from 'app/styles/space';
 import theme from 'app/utils/theme';
@@ -259,7 +259,7 @@ export const ChartNote = styled('div')`
   margin-bottom: ${space(3)};
 `;
 
-export const SavedQueryAction = styled(Link)`
+export const SavedQueryAction = styled(BaseLink)`
   color: ${p => p.theme.gray6};
   margin-left: ${space(2)};
   display: flex;

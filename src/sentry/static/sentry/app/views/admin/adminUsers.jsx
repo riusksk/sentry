@@ -3,7 +3,7 @@ import React from 'react';
 import moment from 'moment';
 
 import {t} from 'app/locale';
-import Link from 'app/components/links/baseLink';
+import BaseLink from 'app/components/links/baseLink';
 import ResultGrid from 'app/components/resultGrid';
 
 export const prettyDate = function(x) {
@@ -15,7 +15,7 @@ class AdminUsers extends React.Component {
     return [
       <td>
         <strong>
-          <Link to={`/manage/users/${row.id}/`}>{row.username}</Link>
+          <BaseLink to={`/manage/users/${row.id}/`}>{row.username}</BaseLink>
         </strong>
         <br />
         {row.email !== row.username && <small>{row.email}</small>}

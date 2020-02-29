@@ -8,7 +8,7 @@ import LineChart from 'app/components/charts/lineChart';
 
 import {Panel, PanelBody, PanelHeader, PanelFooter} from 'app/components/panels';
 import BarChart from 'app/components/charts/barChart';
-import Link from 'app/components/links/baseLink';
+import BaseLink from 'app/components/links/baseLink';
 import DateTime from 'app/components/dateTime';
 
 import space from 'app/styles/space';
@@ -146,11 +146,13 @@ export default class SentryApplicationDashboard extends AsyncView<Props, State> 
         <PanelFooter>
           <StyledFooter>
             {t('Integration views are measured through views on the ')}
-            <Link to={`/sentry-apps/${appSlug}/external-install/`}>
+            <BaseLink to={`/sentry-apps/${appSlug}/external-install/`}>
               {t('external installation page')}
-            </Link>
+            </BaseLink>
             {t(' and views on the Learn More/Install modal on the ')}
-            <Link to={`/settings/${orgId}/integrations/`}>{t('integrations page')}</Link>
+            <BaseLink to={`/settings/${orgId}/integrations/`}>
+              {t('integrations page')}
+            </BaseLink>
           </StyledFooter>
         </PanelFooter>
       </Panel>

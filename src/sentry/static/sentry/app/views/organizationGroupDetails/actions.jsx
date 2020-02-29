@@ -20,7 +20,7 @@ import FeatureDisabled from 'app/components/acl/featureDisabled';
 import GroupActions from 'app/actions/groupActions';
 import GuideAnchor from 'app/components/assistant/guideAnchor';
 import IgnoreActions from 'app/components/actions/ignore';
-import Link from 'app/components/links/link';
+import BaseLink from 'app/components/links/baseLink';
 import LinkWithConfirmation from 'app/components/links/linkWithConfirmation';
 import MenuItem from 'app/components/menuItem';
 import ResolveActions from 'app/components/actions/resolve';
@@ -315,13 +315,13 @@ const GroupDetailsActions = createReactClass({
 
         {orgFeatures.has('discover-basic') && (
           <div className="btn-group">
-            <Link
+            <BaseLink
               className={buttonClassName}
               title={t('Open in Discover')}
               to={this.getDiscoverUrl()}
             >
               {t('Open in Discover')}
-            </Link>
+            </BaseLink>
           </div>
         )}
       </div>

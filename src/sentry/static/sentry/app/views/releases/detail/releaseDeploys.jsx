@@ -4,7 +4,7 @@ import styled from '@emotion/styled';
 
 import {t} from 'app/locale';
 import InlineSvg from 'app/components/inlineSvg';
-import Link from 'app/components/links/baseLink';
+import BaseLink from 'app/components/links/baseLink';
 import RepoLabel from 'app/components/repoLabel';
 import TimeSince from 'app/components/timeSince';
 
@@ -34,7 +34,7 @@ export default class ReleaseDeploys extends React.Component {
                 )}`;
                 return (
                   <li key={deploy.id}>
-                    <Link to={path} title={t('View in stream')}>
+                    <BaseLink to={path} title={t('View in stream')}>
                       <div className="row row-flex row-center-vertically">
                         <div className="col-xs-6">
                           <ReleaseRepoLabel>
@@ -48,7 +48,7 @@ export default class ReleaseDeploys extends React.Component {
                           </small>
                         </div>
                       </div>
-                    </Link>
+                    </BaseLink>
                   </li>
                 );
               })}

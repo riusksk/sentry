@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 import InlineSvg from 'app/components/inlineSvg';
-import Link from 'app/components/links/baseLink';
+import BaseLink from 'app/components/links/baseLink';
 import Panel from 'app/components/panels/panel';
 import space from 'app/styles/space';
 
@@ -65,9 +65,9 @@ const AuthSidebar = styled('div')`
 `;
 
 const SentryButton = styled(p => (
-  <Link to="/" {...p}>
+  <BaseLink to="/" {...p}>
     <InlineSvg size="24px" src="icon-sentry" />
-  </Link>
+  </BaseLink>
 ))`
   color: #fff;
 

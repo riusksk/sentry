@@ -8,7 +8,7 @@ import UserAvatar from 'app/components/avatar/userAvatar';
 import Button from 'app/components/button';
 import Confirm from 'app/components/confirm';
 import InlineSvg from 'app/components/inlineSvg';
-import Link from 'app/components/links/baseLink';
+import BaseLink from 'app/components/links/baseLink';
 import LoadingIndicator from 'app/components/loadingIndicator';
 import SentryTypes from 'app/sentryTypes';
 import space from 'app/styles/space';
@@ -234,7 +234,7 @@ const Section = styled('div')`
 `;
 
 const MemberHeading = styled(Section)``;
-const MemberDescription = styled(Link)`
+const MemberDescription = styled(BaseLink)`
   overflow: hidden;
 `;
 

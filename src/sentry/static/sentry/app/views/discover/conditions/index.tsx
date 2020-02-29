@@ -2,7 +2,7 @@ import React from 'react';
 
 import InlineSvg from 'app/components/inlineSvg';
 import {t} from 'app/locale';
-import Link from 'app/components/links/link';
+import BaseLink from 'app/components/links/baseLink';
 
 import ConditionRow from './condition';
 import {PlaceholderText, SelectListItem, AddText, SidebarLabel} from '../styles';
@@ -41,7 +41,11 @@ export default class Conditions extends React.Component<ConditionsProps> {
           <SidebarLabel>{t('Conditions')}</SidebarLabel>
           {!disabled && (
             <AddText>
-              (<Link onClick={() => this.addRow()}>{t('Add')}</Link>)
+              {`(`}
+              <BaseLink to="#" onClick={() => this.addRow()}>
+                {t('Add')}
+              </BaseLink>
+              {')'}
             </AddText>
           )}
         </div>

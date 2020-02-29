@@ -3,7 +3,7 @@ import React from 'react';
 import {t} from 'app/locale';
 
 import InlineSvg from 'app/components/inlineSvg';
-import Link from 'app/components/links/link';
+import BaseLink from 'app/components/links/baselink';
 
 import AggregationRow from './aggregation';
 import {PlaceholderText, SelectListItem, AddText, SidebarLabel} from '../styles';
@@ -37,15 +37,17 @@ export default class Aggregations extends React.Component<AggregationsProps> {
   render() {
     const {value, columns, disabled} = this.props;
 
-    console.log('LinkLinkLinkLinkLink');
-
     return (
       <div>
         <div>
           <SidebarLabel>{t('Aggregation')}</SidebarLabel>
           {!disabled && (
             <AddText>
-              (<Link onClick={() => this.addRow()}>{t('Add')}</Link>)
+              {`(`}
+              <BaseLink to="#" onClick={() => this.addRow()}>
+                {t('Add')}
+              </BaseLink>
+              {`)`}
             </AddText>
           )}
         </div>

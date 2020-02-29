@@ -11,7 +11,7 @@ import DropdownLink from 'app/components/dropdownLink';
 import ErrorLevel from 'app/components/events/errorLevel';
 import GroupChart from 'app/components/stream/groupChart';
 import GroupStore from 'app/stores/groupStore';
-import Link from 'app/components/links/baseLink';
+import BaseLink from 'app/components/links/baseLink';
 import SentryTypes from 'app/sentryTypes';
 import SnoozeAction from 'app/components/issues/snoozeAction';
 import space from 'app/styles/space';
@@ -86,11 +86,11 @@ class CompactIssueHeader extends React.Component {
         <IssueHeaderMetaWrapper>
           <StyledErrorLevel size="12px" level={data.level} title={data.level} />
           <h3 className="truncate">
-            <Link to={issueLink}>
+            <BaseLink to={issueLink}>
               <span className="icon icon-soundoff" />
               <span className="icon icon-star-solid" />
               {this.getTitle()}
-            </Link>
+            </BaseLink>
           </h3>
         </IssueHeaderMetaWrapper>
         <div className="event-extra">
@@ -99,10 +99,10 @@ class CompactIssueHeader extends React.Component {
           </span>
           {data.numComments !== 0 && (
             <span>
-              <Link to={`${basePath}${data.id}/activity/`} className="comments">
+              <BaseLink to={`${basePath}${data.id}/activity/`} className="comments">
                 <span className="icon icon-comments" style={styles} />
                 <span className="tag-count">{data.numComments}</span>
-              </Link>
+              </BaseLink>
             </span>
           )}
           <span className="culprit">{this.getMessage()}</span>

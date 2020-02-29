@@ -6,7 +6,7 @@ import styled from '@emotion/styled';
 import {t} from 'app/locale';
 import IdBadge from 'app/components/idBadge';
 import InlineSvg from 'app/components/inlineSvg';
-import Link from 'app/components/links/link';
+import BaseLink from 'app/components/links/baseLink';
 import ProjectSelector from 'app/components/projectSelector';
 import space from 'app/styles/space';
 
@@ -54,30 +54,33 @@ const ProjectHeaderProjectSelector = withRouter(
     render() {
       return (
         <ProjectSelector {...this.props} onSelect={this.handleSelect}>
-          {({getActorProps, activeProject}) => (
-            <DropdownLabel>
-              {activeProject ? (
-                <IdBadge
-                  project={activeProject}
-                  avatarSize={20}
-                  displayName={
-                    <ProjectNameLink {...this.getProjectUrlProps(activeProject)}>
-                      {this.getProjectLabel(activeProject)}
-                    </ProjectNameLink>
-                  }
-                />
-              ) : (
-                <SelectProject
-                  {...getActorProps({
-                    role: 'button',
-                  })}
-                >
-                  {t('Select a project')}
-                </SelectProject>
-              )}
-              <DropdownIcon />
-            </DropdownLabel>
-          )}
+          {({getActorProps, activeProject}) => {
+            const {to, href} = this.getProjectUrlProps(activeProject);
+            return (
+              <DropdownLabel>
+                {activeProject ? (
+                  <IdBadge
+                    project={activeProject}
+                    avatarSize={20}
+                    displayName={
+                      <ProjectNameLink to={to || href} external={!!href}>
+                        {this.getProjectLabel(activeProject)}
+                      </ProjectNameLink>
+                    }
+                  />
+                ) : (
+                  <SelectProject
+                    {...getActorProps({
+                      role: 'button',
+                    })}
+                  >
+                    {t('Select a project')}
+                  </SelectProject>
+                )}
+                <DropdownIcon />
+              </DropdownLabel>
+            );
+          }}
         </ProjectSelector>
       );
     }
@@ -109,7 +112,7 @@ const SelectProject = styled('span')`
   padding-right: ${space(0.5)};
 `;
 
-const ProjectNameLink = styled(Link)`
+const ProjectNameLink = styled(BaseLink)`
   color: ${p => p.theme.textColor};
   font-size: 20px;
   line-height: 1.2;

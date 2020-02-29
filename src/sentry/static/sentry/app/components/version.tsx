@@ -7,7 +7,7 @@ import {WithRouterProps} from 'react-router/lib/withRouter';
 import {Organization} from 'app/types';
 import SentryTypes from 'app/sentryTypes';
 import GlobalSelectionLink from 'app/components/globalSelectionLink';
-import Link from 'app/components/links/baseLink';
+import BaseLink from 'app/components/links/baseLink';
 import Tooltip from 'app/components/tooltip';
 import {IconCopy} from 'app/icons';
 import Clipboard from 'app/components/clipboard';
@@ -65,7 +65,7 @@ const Version = ({
   className,
   location,
 }: WithRouterProps & Props) => {
-  const LinkComponent = preserveGlobalSelection ? GlobalSelectionLink : Link;
+  const LinkComponent = preserveGlobalSelection ? GlobalSelectionLink : BaseLink;
   const versionToDisplay = formatVersion(version, withPackage);
 
   let releaseDetailProjectId: null | undefined | string | string[];

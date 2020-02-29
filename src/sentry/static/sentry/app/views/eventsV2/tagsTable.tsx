@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import {LocationDescriptor} from 'history';
 
-import Link from 'app/components/links/baseLink';
+import BaseLink from 'app/components/links/baseLink';
 import Tooltip from 'app/components/tooltip';
 import {t} from 'app/locale';
 import space from 'app/styles/space';
@@ -57,7 +57,16 @@ const TagsTable = (props: Props) => {
                       <span>{renderTagValue()}</span>
                     </Tooltip>
                   ) : (
-                    <Link to={target}>{renderTagValue()}</Link>
+                    <BaseLink
+                      to={target || '#'}
+                      onClick={(event: React.MouseEvent<HTMLAnchorElement>) => {
+                        if (!target) {
+                          event.preventDefault();
+                        }
+                      }}
+                    >
+                      {renderTagValue()}
+                    </BaseLink>
                   )}
                 </TagValue>
               </StyledTr>

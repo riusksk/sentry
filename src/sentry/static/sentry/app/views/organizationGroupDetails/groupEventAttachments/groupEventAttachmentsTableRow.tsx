@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import Link from 'app/components/links/baseLink';
+import BaseLink from 'app/components/links/baseLink';
 import {t} from 'app/locale';
 import DateTime from 'app/components/dateTime';
 import FileSize from 'app/components/fileSize';
@@ -35,11 +35,11 @@ const GroupEventAttachmentsTableRow = ({
           <br />
           <small>
             <DateTime date={attachment.dateCreated} /> &middot;{' '}
-            <Link
+            <BaseLink
               to={`/organizations/${orgId}/issues/${groupId}/events/${attachment.event_id}/`}
             >
               {attachment.event_id}
-            </Link>
+            </BaseLink>
           </small>
         </h5>
       </td>

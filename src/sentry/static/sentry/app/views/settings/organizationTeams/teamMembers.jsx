@@ -18,7 +18,7 @@ import DropdownButton from 'app/components/dropdownButton';
 import EmptyMessage from 'app/views/settings/components/emptyMessage';
 import IdBadge from 'app/components/idBadge';
 import InlineSvg from 'app/components/inlineSvg';
-import Link from 'app/components/links/link';
+import BaseLink from 'app/components/links/baseLink';
 import LoadingError from 'app/components/loadingError';
 import LoadingIndicator from 'app/components/loadingIndicator';
 import SentryTypes from 'app/sentryTypes';
@@ -225,6 +225,7 @@ class TeamMembers extends React.Component {
       <StyledMembersLabel>
         {t('Members')}
         <StyledCreateMemberLink
+          to="#"
           onClick={() => openInviteMembersModal({source: 'teams'})}
           data-test-id="invite-member"
         >
