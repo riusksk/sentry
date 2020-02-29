@@ -8,7 +8,7 @@ import AutoSelectText from 'app/components/autoSelectText';
 import Button from 'app/components/button';
 import EmptyMessage from 'app/views/settings/components/emptyMessage';
 import ExternalLink from 'app/components/links/externalLink';
-import BaseLink from 'app/components/links/baseLink';
+import Link from 'app/components/links/link';
 import LinkWithConfirmation from 'app/components/links/linkWithConfirmation';
 import SettingsPageHeader from 'app/views/settings/components/settingsPageHeader';
 import TextBlock from 'app/views/settings/components/text/textBlock';
@@ -58,7 +58,7 @@ class OrganizationApiKeysList extends React.Component {
           {tct(
             'psst. Until Sentry supports OAuth, you might want to switch to using [tokens:Auth Tokens] instead.',
             {
-              tokens: <BaseLink to="/settings/account/api/auth-tokens/" />,
+              tokens: <Link to="/settings/account/api/auth-tokens/" />,
             }
           )}
         </div>
@@ -95,7 +95,7 @@ class OrganizationApiKeysList extends React.Component {
                   <PanelItem alignItems="center" p={0} py={1} key={id}>
                     <Flex alignItems="center" flex="1">
                       <Box px={2} flex="1" alignItems="center">
-                        <BaseLink to={apiDetailsUrl}>{label}</BaseLink>
+                        <Link to={apiDetailsUrl}>{label}</Link>
                       </Box>
                       <Box px={2} flex="2">
                         <AutoSelectText className="form-control disabled">

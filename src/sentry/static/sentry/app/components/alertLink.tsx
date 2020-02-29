@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import React from 'react';
 import {LocationDescriptor} from 'history';
 
-import BaseLink from 'app/components/links/baseLink';
+import Link from 'app/components/links/link';
 import InlineSvg from 'app/components/inlineSvg';
 import space from 'app/styles/space';
 
@@ -46,7 +46,7 @@ export default class AlertLink extends React.Component<Props> {
   }
 }
 
-const StyledLink = styled(BaseLink)<{priority: Priority; size: Size}>`
+const StyledLink = styled(Link)<{priority: Priority; size: Size}>`
   display: flex;
   align-items: center;
   background-color: ${p => p.theme.alert[p.priority].backgroundLight};

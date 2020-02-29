@@ -6,7 +6,7 @@ import {trackAnalyticsEvent} from 'app/utils/analytics';
 import {t} from 'app/locale';
 import {DISCOVER2_DOCS_URL} from 'app/constants';
 import {Form, SelectField} from 'app/components/forms';
-import BaseLink from 'app/components/links/baseLink';
+import Link from 'app/components/links/link';
 import {IconChevron, IconDocs} from 'app/icons';
 import {Organization} from 'app/types';
 import space from 'app/styles/space';
@@ -288,7 +288,7 @@ const FormRow = styled('div')`
   grid-column-gap: ${space(2)};
 `;
 
-const FooterContent = styled(BaseLink)`
+const FooterContent = styled(Link)`
   display: flex;
   align-items: center;
   flex-grow: 1;

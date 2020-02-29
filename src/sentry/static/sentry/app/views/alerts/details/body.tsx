@@ -18,7 +18,7 @@ import Duration from 'app/components/duration';
 import EventView from 'app/views/eventsV2/eventView';
 import Feature from 'app/components/acl/feature';
 import InlineSvg from 'app/components/inlineSvg';
-import BaseLink from 'app/components/links/baseLink';
+import Link from 'app/components/links/link';
 import NavTabs from 'app/components/navTabs';
 import Placeholder from 'app/components/placeholder';
 import SeenByList from 'app/components/seenByList';
@@ -178,9 +178,9 @@ export default class DetailsBody extends React.Component<Props> {
           <ActivityPageContent>
             <StyledNavTabs underlined>
               <li className="active">
-                <BaseLink to="#" onClick={this.handlePreventDefault}>
+                <Link to="#" onClick={this.handlePreventDefault}>
                   {t('Activity')}
-                </BaseLink>
+                </Link>
               </li>
 
               <SeenByTab>
@@ -288,7 +288,7 @@ const Sidebar = styled('div')`
   }
 `;
 
-const SideHeaderLink = styled(BaseLink)`
+const SideHeaderLink = styled(Link)`
   display: grid;
   grid-auto-flow: column;
   align-items: center;

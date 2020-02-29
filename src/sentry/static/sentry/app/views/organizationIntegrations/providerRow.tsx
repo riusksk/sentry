@@ -12,7 +12,7 @@ import CircleIndicator from 'app/components/circleIndicator';
 import InstalledIntegration, {
   Props as InstalledIntegrationProps,
 } from 'app/views/organizationIntegrations/installedIntegration';
-import BaseLink from 'app/components/links/baseLink';
+import Link from 'app/components/links/link';
 import PluginIcon from 'app/plugins/components/pluginIcon';
 import SentryTypes from 'app/sentryTypes';
 import space from 'app/styles/space';
@@ -214,6 +214,6 @@ const StyledInstalledIntegration = styled(
   border-top: 1px dashed ${p => p.theme.borderLight};
 `;
 
-const StyledLink = styled(BaseLink)`
+const StyledLink = styled(Link)`
   color: ${p => p.theme.gray2};
 `;

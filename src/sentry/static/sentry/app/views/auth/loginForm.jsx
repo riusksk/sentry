@@ -9,7 +9,7 @@ import {t} from 'app/locale';
 import Button from 'app/components/button';
 import ConfigStore from 'app/stores/configStore';
 import Form from 'app/components/forms/form';
-import BaseLink from 'app/components/links/baseLink';
+import Link from 'app/components/links/link';
 import PasswordField from 'app/components/forms/passwordField';
 import SentryTypes from 'app/sentryTypes';
 import TextField from 'app/components/forms/textField';
@@ -167,7 +167,7 @@ const ProviderWrapper = styled('div')`
   }
 `;
 
-const LostPasswordLink = styled(BaseLink)`
+const LostPasswordLink = styled(Link)`
   color: ${p => p.theme.gray2};
 
   &:hover {

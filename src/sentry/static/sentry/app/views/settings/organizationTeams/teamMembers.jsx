@@ -18,7 +18,7 @@ import DropdownButton from 'app/components/dropdownButton';
 import EmptyMessage from 'app/views/settings/components/emptyMessage';
 import IdBadge from 'app/components/idBadge';
 import InlineSvg from 'app/components/inlineSvg';
-import BaseLink from 'app/components/links/baseLink';
+import Link from 'app/components/links/link';
 import LoadingError from 'app/components/loadingError';
 import LoadingIndicator from 'app/components/loadingIndicator';
 import SentryTypes from 'app/sentryTypes';

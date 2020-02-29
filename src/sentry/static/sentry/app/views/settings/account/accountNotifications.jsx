@@ -9,7 +9,7 @@ import AsyncView from 'app/views/asyncView';
 import Form from 'app/views/settings/components/forms/form';
 import InlineSvg from 'app/components/inlineSvg';
 import JsonForm from 'app/views/settings/components/forms/jsonForm';
-import BaseLink from 'app/components/links/baseLink';
+import Link from 'app/components/links/link';
 import {PanelFooter} from 'app/components/panels';
 import SettingsPageHeader from 'app/views/settings/components/settingsPageHeader';
 import accountNotificationFields from 'app/data/forms/accountNotificationSettings';
@@ -76,7 +76,7 @@ export default class AccountNotifications extends AsyncView {
   }
 }
 
-const FineTuneLink = styled(BaseLink)`
+const FineTuneLink = styled(Link)`
   display: flex;
   justify-content: space-between;
   padding: 15px 20px;

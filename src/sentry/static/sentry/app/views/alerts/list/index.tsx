@@ -16,7 +16,7 @@ import Count from 'app/components/count';
 import Duration from 'app/components/duration';
 import EmptyStateWarning from 'app/components/emptyStateWarning';
 import ExternalLink from 'app/components/links/externalLink';
-import BaseLink from 'app/components/links/baseLink';
+import Link from 'app/components/links/link';
 import LoadingIndicator from 'app/components/loadingIndicator';
 import PageHeading from 'app/components/pageHeading';
 import Pagination from 'app/components/pagination';
@@ -255,7 +255,7 @@ const TitleAndSparkLine = styled('div')`
   overflow: hidden;
 `;
 
-const TitleLink = styled(BaseLink)`
+const TitleLink = styled(Link)`
   ${overflowEllipsis}
 `;
 

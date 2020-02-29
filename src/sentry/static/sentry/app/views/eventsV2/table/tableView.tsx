@@ -8,7 +8,7 @@ import GridEditable, {COL_WIDTH_UNDEFINED} from 'app/components/gridEditable';
 import {IconEvent, IconStack} from 'app/icons';
 import {t} from 'app/locale';
 import {assert} from 'app/types/utils';
-import BaseLink from 'app/components/links/baseLink';
+import Link from 'app/components/links/link';
 import Tooltip from 'app/components/tooltip';
 
 import {
@@ -486,7 +486,7 @@ const ExpandAggregateRow = (props: {
       query: nextView.generateQueryStringObject(),
     };
 
-    return <BaseLink to={target}>{children({willExpand: true})}</BaseLink>;
+    return <Link to={target}>{children({willExpand: true})}</Link>;
   }
 
   return <React.Fragment>{children({willExpand: false})}</React.Fragment>;
@@ -500,7 +500,7 @@ const HeaderIcon = styled('span')`
 `;
 
 // Fudge the icon down so it is center aligned with the table contents.
-const IconLink = styled(BaseLink)`
+const IconLink = styled(Link)`
   position: relative;
   display: inline-block;
   top: 3px;

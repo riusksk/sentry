@@ -4,7 +4,7 @@ import {browserHistory} from 'react-router';
 import overflowEllipsis from 'app/styles/overflowEllipsis';
 import theme from 'app/utils/theme';
 import {IconBookmark} from 'app/icons/iconBookmark';
-import BaseLink from 'app/components/links/baseLink';
+import Link from 'app/components/links/link';
 
 import space from 'app/styles/space';
 import {callIfFunction} from 'app/utils/callIfFunction';
@@ -68,7 +68,7 @@ class QueryCard extends React.PureComponent<Props> {
   }
 }
 
-const StyledQueryCard = styled(BaseLink)`
+const StyledQueryCard = styled(Link)`
   background: ${p => p.theme.white};
   border: 1px solid ${p => p.theme.borderLight};
   border-radius: ${p => p.theme.borderRadius};

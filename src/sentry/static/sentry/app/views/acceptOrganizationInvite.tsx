@@ -10,7 +10,7 @@ import Alert from 'app/components/alert';
 import AsyncView from 'app/views/asyncView';
 import Button from 'app/components/button';
 import ConfigStore from 'app/stores/configStore';
-import BaseLink from 'app/components/links/baseLink';
+import Link from 'app/components/links/link';
 import NarrowLayout from 'app/components/narrowLayout';
 import SettingsPageHeader from 'app/views/settings/components/settingsPageHeader';
 import space from 'app/styles/space';
@@ -76,7 +76,7 @@ class AcceptOrganizationInvite extends AsyncView<Props, State> {
           'Your account ([email]) is already a member of this organization. [switchLink:Switch accounts]?',
           {
             email: user.email,
-            switchLink: <BaseLink to="#" onClick={this.handleLogout} external />,
+            switchLink: <Link to="#" onClick={this.handleLogout} external />,
           }
         )}
       </Alert>
@@ -126,9 +126,9 @@ class AcceptOrganizationInvite extends AsyncView<Props, State> {
               {t('Create a new account')}
             </Button>
           )}
-          <BaseLink to={this.makeNextUrl('/auth/login/')} external>
+          <Link to={this.makeNextUrl('/auth/login/')} external>
             {t('Login using an existing account')}
-          </BaseLink>
+          </Link>
         </Actions>
       </React.Fragment>
     );

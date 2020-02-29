@@ -3,7 +3,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import {css} from '@emotion/core';
 
-import BaseLink from 'app/components/links/baseLink';
+import Link from 'app/components/links/link';
 import ExternalLink from 'app/components/links/externalLink';
 
 import {OrgSummary} from './sidebarOrgSummary';
@@ -78,7 +78,7 @@ export {getMenuItemStyles};
 
 const MenuItemLink = styled(({to, href, external, ...props}) => {
   if (to || href) {
-    return <BaseLink {...props} to={to || href} external={external} />;
+    return <Link {...props} to={to || href} external={external} />;
   }
 
   return <div tabIndex="0" {...props} />;

@@ -11,7 +11,7 @@ import ConfigStore from 'app/stores/configStore';
 import ExternalLink from 'app/components/links/externalLink';
 import {fetchOrganizationDetails} from 'app/actionCreators/organizations';
 import InlineSvg from 'app/components/inlineSvg';
-import BaseLink from 'app/components/links/baseLink';
+import Link from 'app/components/links/link';
 import LoadingIndicator from 'app/components/loadingIndicator';
 import {Panel, PanelBody, PanelHeader} from 'app/components/panels';
 import overflowEllipsis from 'app/styles/overflowEllipsis';
@@ -309,7 +309,7 @@ type CenterableProps = {
   isCentered?: boolean;
 };
 
-const HomeLink = styled(BaseLink)`
+const HomeLink = styled(Link)`
   color: ${p => p.theme.purple};
 
   &:hover {

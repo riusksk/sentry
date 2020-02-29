@@ -9,7 +9,7 @@ import BookmarkStar from 'app/components/projects/bookmarkStar';
 import {Client} from 'app/api';
 import {loadStatsForProject} from 'app/actionCreators/projects';
 import IdBadge from 'app/components/idBadge';
-import BaseLink from 'app/components/links/baseLink';
+import Link from 'app/components/links/link';
 import ProjectsStatsStore from 'app/stores/projectsStatsStore';
 import SentryTypes from 'app/sentryTypes';
 import space from 'app/styles/space';
@@ -51,11 +51,11 @@ class ProjectCard extends React.Component {
                 avatarSize={18}
                 displayName={
                   hasProjectAccess ? (
-                    <BaseLink
+                    <Link
                       to={`/organizations/${organization.slug}/issues/?project=${id}`}
                     >
                       <strong>{slug}</strong>
-                    </BaseLink>
+                    </Link>
                   ) : (
                     <span>{slug}</span>
                   )

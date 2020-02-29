@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import isPropValid from '@emotion/is-prop-valid';
 
 import {t} from 'app/locale';
-import BaseLink from 'app/components/links/baseLink';
+import Link from 'app/components/links/link';
 import InlineSvg from 'app/components/inlineSvg';
 import space from 'app/styles/space';
 import {Event, Organization} from 'app/types';
@@ -94,7 +94,7 @@ const Pagination = (props: Props) => {
   );
 };
 
-const StyledTextLink = styled(BaseLink, {shouldForwardProp: isPropValid})<{
+const StyledTextLink = styled(Link, {shouldForwardProp: isPropValid})<{
   theme: any;
   disabled: boolean;
   isLast: boolean;

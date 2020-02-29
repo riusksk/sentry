@@ -9,7 +9,7 @@ import ActorAvatar from 'app/components/avatar/actorAvatar';
 import Alert from 'app/components/alert';
 import Hovercard from 'app/components/hovercard';
 import InlineSvg from 'app/components/inlineSvg';
-import BaseLink from 'app/components/links/baseLink';
+import Link from 'app/components/links/link';
 import SentryTypes from 'app/sentryTypes';
 import space from 'app/styles/space';
 import theme from 'app/utils/theme';
@@ -28,7 +28,7 @@ const SuggestedOwnerHovercard = ({actor, commits, rules, ...props}) => (
               'The email [actorEmail] is not a member of your organization. [inviteUser:Invite] them or link additional emails in [accountSettings:account settings].',
               {
                 actorEmail: <strong>{actor.email}</strong>,
-                accountSettings: <BaseLink to="/settings/account/emails/" />,
+                accountSettings: <Link to="/settings/account/emails/" />,
                 inviteUser: (
                   <a
                     onClick={() =>

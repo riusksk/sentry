@@ -20,7 +20,7 @@ import DropdownBubble from 'app/components/dropdownBubble';
 import GroupStore from 'app/stores/groupStore';
 import Highlight from 'app/components/highlight';
 import InlineSvg from 'app/components/inlineSvg';
-import BaseLink from 'app/components/links/baseLink';
+import Link from 'app/components/links/link';
 import LoadingIndicator from 'app/components/loadingIndicator';
 import MemberListStore from 'app/stores/memberListStore';
 import ProjectsStore from 'app/stores/projectsStore';
@@ -387,7 +387,7 @@ const MenuItemWrapper = styled('div')<{
     `};
 `;
 
-const InviteMemberLink = styled(BaseLink)`
+const InviteMemberLink = styled(Link)`
   color: ${p => p.theme.textColor};
 `;
 

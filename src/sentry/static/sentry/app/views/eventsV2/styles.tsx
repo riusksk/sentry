@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 import DateTime from 'app/components/dateTime';
-import BaseLink from 'app/components/links/baseLink';
+import Link from 'app/components/links/link';
 import overflowEllipsis from 'app/styles/overflowEllipsis';
 import space from 'app/styles/space';
 
@@ -34,7 +34,7 @@ export const StyledDateTime = styled(DateTime)`
   ${overflowEllipsis};
 `;
 
-export const OverflowLink = styled(BaseLink)`
+export const OverflowLink = styled(Link)`
   ${overflowEllipsis};
 `;
 

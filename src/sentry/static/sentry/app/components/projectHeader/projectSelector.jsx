@@ -6,7 +6,7 @@ import styled from '@emotion/styled';
 import {t} from 'app/locale';
 import IdBadge from 'app/components/idBadge';
 import InlineSvg from 'app/components/inlineSvg';
-import BaseLink from 'app/components/links/baseLink';
+import Link from 'app/components/links/link';
 import ProjectSelector from 'app/components/projectSelector';
 import space from 'app/styles/space';
 
@@ -112,7 +112,7 @@ const SelectProject = styled('span')`
   padding-right: ${space(0.5)};
 `;
 
-const ProjectNameLink = styled(BaseLink)`
+const ProjectNameLink = styled(Link)`
   color: ${p => p.theme.textColor};
   font-size: 20px;
   line-height: 1.2;

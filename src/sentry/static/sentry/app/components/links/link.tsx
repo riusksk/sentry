@@ -6,7 +6,7 @@ import {Location, LocationDescriptor} from 'history';
 
 type ToLocationFunction = (location: Location) => LocationDescriptor;
 
-export type BaseLinkProps<T extends boolean = false> = {
+export type LinkProps<T extends boolean = false> = {
   to: T extends true ? string : ToLocationFunction | LocationDescriptor;
   external?: T;
   className?: string;
@@ -15,12 +15,7 @@ export type BaseLinkProps<T extends boolean = false> = {
   onClick?: (event: React.MouseEvent<HTMLAnchorElement>) => void;
 };
 
-const BaseLink = <T extends boolean>({
-  to,
-  external,
-  blank = true,
-  ...props
-}: BaseLinkProps<T>) =>
+const Link = <T extends boolean>({to, external, blank = true, ...props}: LinkProps<T>) =>
   external && typeof to === 'string' ? (
     <a
       href={to}
@@ -32,7 +27,7 @@ const BaseLink = <T extends boolean>({
     <RouterLink to={to} {...props} />
   );
 
-BaseLink.propTypes = {
+Link.propTypes = {
   to: PropTypes.any.isRequired,
   external: PropTypes.bool,
   className: PropTypes.string,
@@ -41,4 +36,4 @@ BaseLink.propTypes = {
   onClick: PropTypes.func,
 };
 
-export default BaseLink;
+export default Link;

@@ -10,7 +10,7 @@ import {
 } from 'app/components/panels';
 import {t, tct} from 'app/locale';
 import Access from 'app/components/acl/access';
-import BaseLink from 'app/components/links/baseLink';
+import Link from 'app/components/links/link';
 import LoadingIndicator from 'app/components/loadingIndicator';
 import RouteError from 'app/views/routeError';
 import SentryTypes from 'app/sentryTypes';
@@ -56,7 +56,7 @@ class ProjectPlugins extends Component {
                   ? tct(
                       "Legacy Integrations must be configured per-project. It's recommended to prefer organization integrations over the legacy project integrations when available. Visit the [link:organization integrations] settings to manage them.",
                       {
-                        link: <BaseLink to={`/settings/${orgId}/integrations`} />,
+                        link: <Link to={`/settings/${orgId}/integrations`} />,
                       }
                     )
                   : t(

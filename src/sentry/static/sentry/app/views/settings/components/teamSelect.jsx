@@ -7,7 +7,7 @@ import {t} from 'app/locale';
 import Button from 'app/components/button';
 import Confirm from 'app/components/confirm';
 import SentryTypes from 'app/sentryTypes';
-import BaseLink from 'app/components/links/baseLink';
+import Link from 'app/components/links/link';
 import {Panel, PanelBody, PanelHeader, PanelItem} from 'app/components/panels';
 import DropdownAutoComplete from 'app/components/dropdownAutoComplete';
 import DropdownButton from 'app/components/dropdownButton';
@@ -190,7 +190,7 @@ const TeamPanelItem = styled(PanelItem)`
   align-items: center;
 `;
 
-const StyledLink = styled(BaseLink)`
+const StyledLink = styled(Link)`
   flex: 1;
   margin-right: ${space(1)};
 `;

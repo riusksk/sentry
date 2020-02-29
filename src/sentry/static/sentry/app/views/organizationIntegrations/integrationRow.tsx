@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import BaseLink from 'app/components/links/baseLink';
+import Link from 'app/components/links/link';
 import {PanelItem} from 'app/components/panels';
 import PluginIcon from 'app/plugins/components/pluginIcon';
 import space from 'app/styles/space';
@@ -80,7 +80,7 @@ const Container = styled('div')`
   padding: 0 16px;
 `;
 
-const IntegrationName = styled(BaseLink)`
+const IntegrationName = styled(Link)`
   font-weight: bold;
   color: ${p => p.theme.blue};
 `;
@@ -92,7 +92,7 @@ const IntegrationDetails = styled('div')`
   font-size: 0.8em;
 `;
 
-const StyledLink = styled(BaseLink)`
+const StyledLink = styled(Link)`
   color: ${p => p.theme.gray2};
   &:before {
     content: '|';

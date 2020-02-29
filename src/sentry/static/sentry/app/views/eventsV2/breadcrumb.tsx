@@ -4,7 +4,7 @@ import {Location} from 'history';
 
 import {t} from 'app/locale';
 import {Event, Organization} from 'app/types';
-import BaseLink from 'app/components/links/baseLink';
+import Link from 'app/components/links/link';
 import InlineSvg from 'app/components/inlineSvg';
 import space from 'app/styles/space';
 
@@ -86,7 +86,7 @@ const BreadcrumbList = styled('span')`
   height: 40px;
 `;
 
-const BreadcrumbItem = styled(BaseLink)`
+const BreadcrumbItem = styled(Link)`
   color: ${p => p.theme.gray2};
 
   &:nth-last-child(2) {

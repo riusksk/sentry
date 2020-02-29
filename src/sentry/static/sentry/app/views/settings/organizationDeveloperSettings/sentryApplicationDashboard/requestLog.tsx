@@ -11,7 +11,7 @@ import DateTime from 'app/components/dateTime';
 import DropdownControl, {DropdownItem} from 'app/components/dropdownControl';
 import DropdownButton from 'app/components/dropdownButton';
 import Tag from 'app/views/settings/components/tag';
-import BaseLink from 'app/components/links/baseLink';
+import Link from 'app/components/links/link';
 import LoadingIndicator from 'app/components/loadingIndicator';
 import Checkbox from 'app/components/checkbox';
 import Button from 'app/components/button';
@@ -87,10 +87,10 @@ const ResponseCode = ({code}: {code: number}) => {
 
 const TimestampLink = ({date, link}: {date: moment.MomentInput; link?: string}) => {
   return link ? (
-    <BaseLink to={link} external>
+    <Link to={link} external>
       <DateTime date={date} />
       <StyledInlineSvg src="icon-open" size="12px" />
-    </BaseLink>
+    </Link>
   ) : (
     <DateTime date={date} />
   );
