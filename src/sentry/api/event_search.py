@@ -404,6 +404,8 @@ class SearchVisitor(NodeVisitor):
                 search_value = int(search_value.text)
         except ValueError:
             raise InvalidSearchQuery(u"Invalid aggregate query condition: {}".format(search_key))
+        except InvalidQuery as exc:
+            raise InvalidSearchQuery(six.text_type(exc))
         return AggregateFilter(search_key, operator, SearchValue(search_value))
 
     def visit_aggregate_date_filter(self, node, children):
