@@ -9,6 +9,7 @@ import Link, {LinkProps} from 'app/components/links/link';
 import overflowEllipsis from 'app/styles/overflowEllipsis';
 import space from 'app/styles/space';
 import SentryTypes from 'app/sentryTypes';
+import {defined} from 'app/utils';
 
 type Props = {
   avatarSize: UserAvatar['props']['size'];
@@ -61,7 +62,7 @@ const MemberBadge = ({
       <StyledAvatar user={user} size={avatarSize} />
       <StyledNameAndEmail>
         <StyledName
-          useLink={useLink && orgId}
+          useLink={useLink && defined(orgId)}
           hideEmail={hideEmail}
           to={member && orgId && `/settings/${orgId}/members/${member.id}/`}
         >

@@ -5,7 +5,7 @@ import React from 'react';
 import * as Sentry from '@sentry/browser';
 
 import {t, tct} from 'app/locale';
-import ExternalLink from 'app/components/links/externalLink';
+import Link from 'app/components/links/link';
 import LoadingError from 'app/components/loadingError';
 import getRouteStringFromRoutes from 'app/utils/getRouteStringFromRoutes';
 
@@ -43,7 +43,7 @@ class PermissionDenied extends React.Component {
           message={tct(
             'Your role does not have the necessary permissions to access this resource, please read more about [link:organizational roles]',
             {
-              link: <ExternalLink href="https://docs.sentry.io/learn/membership/" />,
+              link: <Link to="https://docs.sentry.io/learn/membership/" external />,
             }
           )}
         />

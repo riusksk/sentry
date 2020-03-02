@@ -12,7 +12,7 @@ import Access from 'app/components/acl/access';
 import AddIntegrationButton from 'app/views/organizationIntegrations/addIntegrationButton';
 import Alert from 'app/components/alert';
 import Button from 'app/components/button';
-import ExternalLink from 'app/components/links/externalLink';
+import Link from 'app/components/links/link';
 import InlineSvg from 'app/components/inlineSvg';
 import PluginIcon from 'app/plugins/components/pluginIcon';
 import SentryTypes from 'app/sentryTypes';
@@ -156,8 +156,12 @@ class IntegrationDetailsModal extends React.Component<Props> {
         <Metadata>
           <AuthorName flex={1}>{t('By %s', provider.metadata.author)}</AuthorName>
           <Box>
-            <ExternalLink href={metadata.source_url}>{t('View Source')}</ExternalLink>
-            <ExternalLink href={metadata.issue_url}>{t('Report Issue')}</ExternalLink>
+            <Link to={metadata.source_url} external>
+              {t('View Source')}
+            </Link>
+            <Link to={metadata.issue_url} external>
+              {t('Report Issue')}
+            </Link>
           </Box>
         </Metadata>
 

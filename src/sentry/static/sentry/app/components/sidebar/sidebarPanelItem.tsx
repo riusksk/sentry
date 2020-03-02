@@ -3,7 +3,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 import {t} from '../../locale';
-import ExternalLink from '../links/externalLink';
+import Link from '../links/link';
 
 type Props = {
   hasSeen?: boolean;
@@ -26,7 +26,9 @@ const SidebarPanelItem = ({hasSeen, title, image, message, link, cta}: Props) =>
 
     {link && (
       <Text>
-        <ExternalLink href={link}>{cta || t('Read More')}</ExternalLink>
+        <Link to={link} external>
+          {cta || t('Read More')}
+        </Link>
       </Text>
     )}
   </SidebarPanelItemRoot>

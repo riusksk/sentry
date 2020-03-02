@@ -11,7 +11,6 @@ import NavTabs from 'app/components/navTabs';
 import space from 'app/styles/space';
 import theme from 'app/utils/theme';
 import InlineSvg from 'app/components/inlineSvg';
-import ExternalLink from 'app/components/links/externalLink';
 
 const HEADER_HEIGHT = 60;
 
@@ -104,7 +103,7 @@ export const DocsSeparator = styled('div')`
   border-bottom: 1px solid ${p => p.theme.borderLight};
 `;
 
-export const DocsLink = styled(ExternalLink)`
+export const DocsLink = styled(Link)`
   color: ${p => p.theme.gray4};
   &:hover {
     color: ${p => p.theme.blue};

@@ -16,7 +16,7 @@ import SentryTypes from 'app/sentryTypes';
 import getDynamicText from 'app/utils/getDynamicText';
 import DateTime from 'app/components/dateTime';
 import Button from 'app/components/button';
-import ExternalLink from 'app/components/links/externalLink';
+import Link from 'app/components/links/link';
 import FileSize from 'app/components/fileSize';
 import LoadingError from 'app/components/loadingError';
 import NotFound from 'app/components/errors/notFound';
@@ -307,7 +307,7 @@ const EventMetadata = (props: {
           })}
         />
       </MetadataContainer>
-      <MetadataJSON href={eventJsonUrl} className="json-link">
+      <MetadataJSON to={eventJsonUrl} className="json-link" external>
         {t('Preview JSON')} (<FileSize bytes={event.size} />)
       </MetadataJSON>
     </MetaDataID>
@@ -354,7 +354,7 @@ const MetadataContainer = styled('div')`
   font-size: ${p => p.theme.fontSizeMedium};
 `;
 
-const MetadataJSON = styled(ExternalLink)`
+const MetadataJSON = styled(Link)`
   font-size: ${p => p.theme.fontSizeMedium};
 `;
 

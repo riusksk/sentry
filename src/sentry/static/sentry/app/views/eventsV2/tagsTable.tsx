@@ -59,9 +59,9 @@ const TagsTable = (props: Props) => {
                   ) : (
                     <Link
                       to={target || '#'}
-                      onClick={(event: React.MouseEvent<HTMLAnchorElement>) => {
+                      onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
                         if (!target) {
-                          event.preventDefault();
+                          e.preventDefault();
                         }
                       }}
                     >

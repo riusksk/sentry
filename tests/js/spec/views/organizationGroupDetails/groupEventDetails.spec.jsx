@@ -197,6 +197,9 @@ describe('groupEventDetails', () => {
       .find('.btn-group')
       .find('Link');
 
+    const x = buttons.at(0).prop('to');
+    debugger;
+
     expect(buttons.at(0).prop('to')).toEqual({
       pathname: '/organizations/org-slug/issues/1/events/oldest/',
       query: {environment: 'dev'},

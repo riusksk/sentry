@@ -15,7 +15,6 @@ import Button from 'app/components/button';
 import Count from 'app/components/count';
 import Duration from 'app/components/duration';
 import EmptyStateWarning from 'app/components/emptyStateWarning';
-import ExternalLink from 'app/components/links/externalLink';
 import Link from 'app/components/links/link';
 import LoadingIndicator from 'app/components/loadingIndicator';
 import PageHeading from 'app/components/pageHeading';
@@ -168,7 +167,11 @@ class IncidentsListContainer extends React.Component<Props> {
                   'This feature may change in the future and currently only shows metric alerts'
                 )}
               />
-              <FeedbackLink href="mailto:alerting-feedback@sentry.io">
+              <FeedbackLink
+                to="mailto:alerting-feedback@sentry.io"
+                blank={false}
+                external
+              >
                 {t('Send feedback')}
               </FeedbackLink>
             </StyledPageHeading>
@@ -221,7 +224,7 @@ const StyledPageHeading = styled(PageHeading)`
   align-items: center;
 `;
 
-const FeedbackLink = styled(ExternalLink)`
+const FeedbackLink = styled(Link)`
   font-size: ${p => p.theme.fontSizeMedium};
   margin-left: ${space(1)};
 `;

@@ -7,7 +7,7 @@ import styled from '@emotion/styled';
 import {formFooterClass} from 'app/views/auth/login';
 import {t, tct} from 'app/locale';
 import ConfigStore from 'app/stores/configStore';
-import ExternalLink from 'app/components/links/externalLink';
+import Link from 'app/components/links/link';
 import Form from 'app/components/forms/form';
 import PasswordField from 'app/components/forms/passwordField';
 import RadioBooleanField from 'app/components/forms/radioBooleanField';
@@ -93,7 +93,7 @@ class RegisterForm extends React.Component {
             `}
             errorMessage={errorMessage}
             extraButton={
-              <PrivacyPolicyLink href="https://sentry.io/privacy/">
+              <PrivacyPolicyLink to="https://sentry.io/privacy/" external>
                 {t('Privacy Policy')}
               </PrivacyPolicyLink>
             }
@@ -129,7 +129,7 @@ class RegisterForm extends React.Component {
   }
 }
 
-const PrivacyPolicyLink = styled(ExternalLink)`
+const PrivacyPolicyLink = styled(Link)`
   color: ${p => p.theme.gray2};
 
   &:hover {

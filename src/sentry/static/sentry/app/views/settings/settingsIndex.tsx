@@ -8,7 +8,6 @@ import {t} from 'app/locale';
 import OrganizationAvatar from 'app/components/avatar/organizationAvatar';
 import UserAvatar from 'app/components/avatar/userAvatar';
 import ConfigStore from 'app/stores/configStore';
-import ExternalLink from 'app/components/links/externalLink';
 import {fetchOrganizationDetails} from 'app/actionCreators/organizations';
 import InlineSvg from 'app/components/inlineSvg';
 import Link from 'app/components/links/link';
@@ -162,12 +161,12 @@ class SettingsIndex extends React.Component<Props> {
 
             <GridPanel>
               <HomePanelHeader>
-                <ExternalHomeLink isCentered href={LINKS.DOCUMENTATION}>
+                <ExternalHomeLink isCentered to={LINKS.DOCUMENTATION}>
                   <HomeIcon color="orange">
                     <InlineSvg src="icon-docs" size="48px" />
                   </HomeIcon>
                 </ExternalHomeLink>
-                <ExternalHomeLink href={LINKS.DOCUMENTATION}>
+                <ExternalHomeLink to={LINKS.DOCUMENTATION}>
                   {t('Documentation')}
                 </ExternalHomeLink>
               </HomePanelHeader>
@@ -176,17 +175,17 @@ class SettingsIndex extends React.Component<Props> {
                 <h3>{t('Quick links')}:</h3>
                 <ul>
                   <li>
-                    <ExternalHomeLink href={LINKS.DOCUMENATATION_QUICKSTART}>
+                    <ExternalHomeLink to={LINKS.DOCUMENATATION_QUICKSTART}>
                       {t('Quickstart Guide')}
                     </ExternalHomeLink>
                   </li>
                   <li>
-                    <ExternalHomeLink href={LINKS.DOCUMENTATION_PLATFORMS}>
+                    <ExternalHomeLink to={LINKS.DOCUMENTATION_PLATFORMS}>
                       {t('Platforms & Frameworks')}
                     </ExternalHomeLink>
                   </li>
                   <li>
-                    <ExternalHomeLink href={LINKS.DOCUMENTATION_CLI}>
+                    <ExternalHomeLink to={LINKS.DOCUMENTATION_CLI}>
                       {t('Sentry CLI')}
                     </ExternalHomeLink>
                   </li>
@@ -213,12 +212,12 @@ class SettingsIndex extends React.Component<Props> {
                     </SupportLinkComponent>
                   </li>
                   <li>
-                    <ExternalHomeLink href={LINKS.GITHUB_ISSUES}>
+                    <ExternalHomeLink to={LINKS.GITHUB_ISSUES}>
                       {t('Sentry on GitHub')}
                     </ExternalHomeLink>
                   </li>
                   <li>
-                    <ExternalHomeLink href={LINKS.SERVICE_STATUS}>
+                    <ExternalHomeLink to={LINKS.SERVICE_STATUS}>
                       {t('Service Status')}
                     </ExternalHomeLink>
                   </li>
@@ -248,7 +247,7 @@ class SettingsIndex extends React.Component<Props> {
                     </HomeLink>
                   </li>
                   <li>
-                    <ExternalHomeLink href={LINKS.DOCUMENTATION_API}>
+                    <ExternalHomeLink to={LINKS.DOCUMENTATION_API}>
                       {t('Documentation')}
                     </ExternalHomeLink>
                   </li>
@@ -324,11 +323,8 @@ const HomeLinkIcon = styled(HomeLink)`
 `;
 
 const ExternalHomeLink = styled(
-  ({
-    isCentered,
-    ...props
-  }: CenterableProps & React.ComponentProps<typeof ExternalLink>) => (
-    <ExternalLink {...props} />
+  ({isCentered, ...props}: CenterableProps & React.ComponentProps<typeof Link>) => (
+    <Link {...props} external />
   )
 )<CenterableProps>`
   color: ${p => p.theme.purple};
@@ -346,7 +342,7 @@ type SupportLinkProps = {
   to: string;
   isCentered?: boolean;
 } & (
-  | ({isOnPremise: true} & React.ComponentProps<typeof ExternalLink>)
+  | ({isOnPremise: true} & React.ComponentProps<typeof Link>)
   | ({isOnPremise: false} & React.ComponentProps<typeof HomeLink>)
 );
 
@@ -358,9 +354,9 @@ const SupportLinkComponent = ({
   ...props
 }: SupportLinkProps) => {
   if (isOnPremise) {
-    return <ExternalHomeLink isCentered={isCentered} href={href} {...props} />;
+    return <ExternalHomeLink {...props} isCentered={isCentered} to={href} />;
   }
-  return <HomeLink to={to} {...props} />;
+  return <HomeLink {...props} to={to} />;
 };
 
 SupportLinkComponent.propTypes = {

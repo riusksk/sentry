@@ -9,7 +9,7 @@ import {loadDocs} from 'app/actionCreators/projects';
 import {t, tct} from 'app/locale';
 import Alert, {alertStyles} from 'app/components/alert';
 import Button from 'app/components/button';
-import ExternalLink from 'app/components/links/externalLink';
+import Link from 'app/components/links/link';
 import FirstEventIndicator from 'app/views/onboarding/projectSetup/firstEventIndicator';
 import LoadingError from 'app/components/loadingError';
 import Panel from 'app/components/panels/panel';
@@ -112,7 +112,7 @@ class ProjectDocs extends React.Component {
            yet! If you have trouble sending your first event be sure to consult
            the [docsLink:full documentation] for [platform].`,
           {
-            docsLink: <ExternalLink href={platformDocs && platformDocs.link} />,
+            docsLink: <Link to={platformDocs && platformDocs.link} external />,
             platform: platforms.find(p => p.id === loadedPlatform).name,
           }
         )}

@@ -11,7 +11,7 @@ import Confirmation from 'app/components/onboardingWizard/confirmation';
 import InlineSvg from 'app/components/inlineSvg';
 import Button from 'app/components/button';
 import space from 'app/styles/space';
-import ExternalLink from 'app/components/links/externalLink';
+import Link from 'app/components/links/link';
 import {OnboardingTask, Organization, OnboardingTaskKey} from 'app/types';
 import {navigateTo} from 'app/actionCreators/navigation';
 
@@ -109,7 +109,7 @@ class TodoItem extends React.Component<Props, State> {
 
     const Action = (p: React.HTMLAttributes<HTMLElement>) =>
       task.actionType === 'external' ? (
-        <ActionExternalLink href={task.location} {...p} />
+        <ActionExternalLink {...p} to={task.location} external />
       ) : (
         <ActionTarget {...p} />
       );
@@ -216,7 +216,7 @@ const Description = styled('p')`
   color: ${p => p.theme.gray3};
 `;
 
-const ActionExternalLink = styled(ExternalLink)`
+const ActionExternalLink = styled(Link)`
   display: block;
 `;
 

@@ -9,7 +9,7 @@ import {
   DEBUG_SOURCE_CASINGS,
   getDebugSourceName,
 } from 'app/data/debugFileSources';
-import ExternalLink from 'app/components/links/externalLink';
+import Link from 'app/components/links/link';
 import Form from 'app/views/settings/components/forms/form';
 import FieldFromConfig from 'app/views/settings/components/forms/fieldFromConfig';
 
@@ -107,9 +107,9 @@ const s3Fields = {
       'Access key to the AWS account. Credentials can be managed in the [link].',
       {
         link: (
-          <ExternalLink href="https://console.aws.amazon.com/iam/">
+          <Link to="https://console.aws.amazon.com/iam/" external>
             IAM console
-          </ExternalLink>
+          </Link>
         ),
       }
     ),
@@ -151,9 +151,9 @@ const gcsFields = {
     placeholder: '-----BEGIN PRIVATE KEY-----\n[PRIVATE-KEY]\n-----END PRIVATE KEY-----',
     help: tct('The service account key. Credentials can be managed on the [link].', {
       link: (
-        <ExternalLink href="https://console.cloud.google.com/project/_/iam-admin">
+        <Link to="https://console.cloud.google.com/project/_/iam-admin" external>
           IAM &amp; Admin Page
-        </ExternalLink>
+        </Link>
       ),
     }),
   },

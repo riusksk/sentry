@@ -9,7 +9,7 @@ import {t} from 'app/locale';
 import AsyncComponent from 'app/components/asyncComponent';
 import UserAvatar from 'app/components/avatar/userAvatar';
 import DeviceName from 'app/components/deviceName';
-import ExternalLink from 'app/components/links/externalLink';
+import Link from 'app/components/links/link';
 import GlobalSelectionLink from 'app/components/globalSelectionLink';
 import Pagination from 'app/components/pagination';
 import TimeSince from 'app/components/timeSince';
@@ -89,9 +89,9 @@ class GroupTagValues extends AsyncComponent<
               )}
             </GlobalSelectionLink>
             {tagValue.email && (
-              <ExternalLink href={`mailto:${tagValue.email}`} className="external-icon">
+              <Link to={`mailto:${tagValue.email}`} className="external-icon" external>
                 <em className="icon-envelope" />
-              </ExternalLink>
+              </Link>
             )}
             {isUrl(tagValue.value) && (
               <a href={tagValue.value} className="external-icon">

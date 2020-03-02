@@ -1,14 +1,14 @@
 import React from 'react';
 
 import {t, tct} from 'app/locale';
-import ExternalLink from 'app/components/links/externalLink';
+import Link from 'app/components/links/link';
 
 // Export route to make these forms searchable by label/help
 export const route = '/settings/:orgId/projects/:projectId/filters/';
 
 const newLineHelpText = t('Separate multiple entries with a newline.');
 const globHelpText = tct('Allows [link:glob pattern matching].', {
-  link: <ExternalLink href="https://en.wikipedia.org/wiki/Glob_(programming)" />,
+  link: <Link to="https://en.wikipedia.org/wiki/Glob_(programming)" external />,
 });
 const getOptionsData = data => ({
   options: data,

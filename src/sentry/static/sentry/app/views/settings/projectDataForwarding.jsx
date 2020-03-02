@@ -5,7 +5,7 @@ import {t, tct} from 'app/locale';
 import Alert from 'app/components/alert';
 import AsyncComponent from 'app/components/asyncComponent';
 import EmptyMessage from 'app/views/settings/components/emptyMessage';
-import ExternalLink from 'app/components/links/externalLink';
+import Link from 'app/components/links/link';
 import Feature from 'app/components/acl/feature';
 import FeatureDisabled from 'app/components/acl/featureDisabled';
 import PermissionAlert from 'app/views/settings/project/permissionAlert';
@@ -133,7 +133,7 @@ class ProjectDataForwarding extends AsyncComponent {
                 more about this functionality in our [link:documentation].`,
                   {
                     link: (
-                      <ExternalLink href="https://docs.sentry.io/learn/data-forwarding/" />
+                      <Link to="https://docs.sentry.io/learn/data-forwarding/" external />
                     ),
                   }
                 )}

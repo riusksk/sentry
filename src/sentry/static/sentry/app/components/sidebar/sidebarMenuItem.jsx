@@ -4,7 +4,6 @@ import styled from '@emotion/styled';
 import {css} from '@emotion/core';
 
 import Link from 'app/components/links/link';
-import ExternalLink from 'app/components/links/externalLink';
 
 import {OrgSummary} from './sidebarOrgSummary';
 

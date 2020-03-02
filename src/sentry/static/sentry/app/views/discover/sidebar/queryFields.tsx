@@ -157,7 +157,7 @@ export default class QueryFields extends React.Component<QueryFieldsProps> {
         </Fieldset>
         <Fieldset>{actions}</Fieldset>
         <DocsSeparator />
-        <DocsLink href="https://docs.sentry.io/product/discover/">
+        <DocsLink to="https://docs.sentry.io/product/discover/" external>
           <DiscoverDocs>
             <DocsIcon src="icon-docs" />
             <DocsLabel>{t('Discover Documentation')}</DocsLabel>

@@ -254,28 +254,30 @@ exports[`IntegrationDetailsModal renders simple integration 1`] = `
         <div
           className="css-vurnku"
         >
-          <ForwardRef
-            href="http://example.com/integration_source_url"
+          <Link
+            external={true}
+            to="http://example.com/integration_source_url"
           >
             <a
               href="http://example.com/integration_source_url"
-              rel="noreferrer noopener"
+              rel="noopener noreferrer"
               target="_blank"
             >
               View Source
             </a>
-          </ForwardRef>
-          <ForwardRef
-            href="http://example.com/integration_issue_url"
+          </Link>
+          <Link
+            external={true}
+            to="http://example.com/integration_issue_url"
           >
             <a
               href="http://example.com/integration_issue_url"
-              rel="noreferrer noopener"
+              rel="noopener noreferrer"
               target="_blank"
             >
               Report Issue
             </a>
-          </ForwardRef>
+          </Link>
         </div>
       </Styled(div)>
     </div>

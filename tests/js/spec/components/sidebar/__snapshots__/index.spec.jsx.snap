@@ -1068,17 +1068,18 @@ exports[`Sidebar SidebarPanel can display Broadcasts panel and mark as seen 1`] 
         <div
           className="css-166h1v-Text ekutvbl3"
         >
-          <ForwardRef
-            href="https://docs.sentry.io/hosted/clients/javascript/sourcemaps/#uploading-source-maps-to-sentry"
+          <Link
+            external={true}
+            to="https://docs.sentry.io/hosted/clients/javascript/sourcemaps/#uploading-source-maps-to-sentry"
           >
             <a
               href="https://docs.sentry.io/hosted/clients/javascript/sourcemaps/#uploading-source-maps-to-sentry"
-              rel="noreferrer noopener"
+              rel="noopener noreferrer"
               target="_blank"
             >
               Read More
             </a>
-          </ForwardRef>
+          </Link>
         </div>
       </Text>
     </div>
@@ -5160,21 +5161,23 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                   >
                                     <ActionExternalLink
                                       data-test-id="setup_user_context"
-                                      href="https://docs.sentry.io/enriching-error-data/context/#capturing-the-user"
+                                      external={true}
                                       onClick={[Function]}
+                                      to="https://docs.sentry.io/enriching-error-data/context/#capturing-the-user"
                                     >
-                                      <ForwardRef
+                                      <Link
                                         className="css-1usfu4d-ActionExternalLink ev4hf7u5"
                                         data-test-id="setup_user_context"
-                                        href="https://docs.sentry.io/enriching-error-data/context/#capturing-the-user"
+                                        external={true}
                                         onClick={[Function]}
+                                        to="https://docs.sentry.io/enriching-error-data/context/#capturing-the-user"
                                       >
                                         <a
                                           className="css-1usfu4d-ActionExternalLink ev4hf7u5"
                                           data-test-id="setup_user_context"
                                           href="https://docs.sentry.io/enriching-error-data/context/#capturing-the-user"
                                           onClick={[Function]}
-                                          rel="noreferrer noopener"
+                                          rel="noopener noreferrer"
                                           target="_blank"
                                         >
                                           <Checkbox>
@@ -5198,7 +5201,7 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                             </p>
                                           </Description>
                                         </a>
-                                      </ForwardRef>
+                                      </Link>
                                     </ActionExternalLink>
                                   </Action>
                                   <SkipButton
