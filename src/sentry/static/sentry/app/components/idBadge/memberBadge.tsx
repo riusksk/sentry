@@ -109,7 +109,7 @@ type NameProps = {
   hideEmail: boolean;
 } & LinkProps;
 
-const StyledName = styled<LinkProps>(({useLink, to, ...props}) => {
+const StyledName = styled(({useLink, to, ...props}: NameProps) => {
   const forwardProps = omit(props, 'hideEmail');
   return useLink ? (
     <Link to={to} data-test-id="member-badge-styled-name-link" {...forwardProps} />

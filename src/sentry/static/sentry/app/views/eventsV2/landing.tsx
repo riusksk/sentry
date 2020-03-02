@@ -280,12 +280,12 @@ class DiscoverLanding extends AsyncComponent<Props, State> {
             onQueryChange={this.handleQueryChange}
           />
           <Feature features={['organizations:discover']} organization={organization}>
-            <Link
+            <SwitchLink
               to={`/organizations/${organization.slug}/discover/`}
               onClick={this.onGoLegacyDiscover}
             >
               {t('Go to Legacy Discover')}
-            </Link>
+            </SwitchLink>
           </Feature>
         </PageContent>
       );
@@ -344,7 +344,7 @@ const StarterButton = styled(Button)`
   margin: ${space(1)};
 `;
 
-const SwitchLink = styled('a')`
+const SwitchLink = styled(Link)`
   font-size: ${p => p.theme.fontSizeSmall};
   margin-left: ${space(1)};
 `;

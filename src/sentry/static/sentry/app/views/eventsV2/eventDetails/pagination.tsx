@@ -95,9 +95,8 @@ const Pagination = (props: Props) => {
 };
 
 const StyledTextLink = styled(Link, {shouldForwardProp: isPropValid})<{
-  theme: any;
   disabled: boolean;
-  isLast: boolean;
+  isLast?: boolean;
 }>`
   color: ${p => (p.disabled ? p.theme.disabled : 'inherit')};
   font-size: ${p => p.theme.fontSizeSmall};
