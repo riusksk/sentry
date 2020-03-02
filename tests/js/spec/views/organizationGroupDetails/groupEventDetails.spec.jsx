@@ -197,20 +197,21 @@ describe('groupEventDetails', () => {
       .find('.btn-group')
       .find('Link');
 
+    // TODO(ts): check the reason why only nonrendered elements are returned
     expect(buttons.at(0).prop('to')).toEqual({
       pathname: '/organizations/org-slug/issues/1/events/oldest/',
       query: {environment: 'dev'},
     });
 
-    expect(buttons.at(1).prop('to')).toEqual({
+    expect(buttons.at(2).prop('to')).toEqual({
       pathname: '/organizations/org-slug/issues/1/events/prev-event-id/',
       query: {environment: 'dev'},
     });
-    expect(buttons.at(2).prop('to')).toEqual({
+    expect(buttons.at(4).prop('to')).toEqual({
       pathname: '/organizations/org-slug/issues/1/events/next-event-id/',
       query: {environment: 'dev'},
     });
-    expect(buttons.at(3).prop('to')).toEqual({
+    expect(buttons.at(6).prop('to')).toEqual({
       pathname: '/organizations/org-slug/issues/1/events/latest/',
       query: {environment: 'dev'},
     });

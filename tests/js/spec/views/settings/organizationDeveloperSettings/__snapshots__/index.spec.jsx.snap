@@ -115,24 +115,26 @@ exports[`Organization Developer Settings when no Apps exist displays empty state
             </SettingsPageHeading>
           </StyledSettingsPageHeading>
           <AlertLink
-            href="https://docs.sentry.io/workflow/integrations/integration-platform/"
             priority="warning"
             size="normal"
+            to="https://docs.sentry.io/workflow/integrations/integration-platform/"
           >
             <StyledLink
               external={true}
               priority="warning"
               size="normal"
+              to="https://docs.sentry.io/workflow/integrations/integration-platform/"
             >
               <Link
                 className="css-1yd43zs-StyledLink e1ylhppg0"
                 external={true}
                 priority="warning"
                 size="normal"
+                to="https://docs.sentry.io/workflow/integrations/integration-platform/"
               >
                 <a
                   className="css-1yd43zs-StyledLink e1ylhppg0"
-                  href="#"
+                  href="https://docs.sentry.io/workflow/integrations/integration-platform/"
                   priority="warning"
                   rel="noopener noreferrer"
                   size="normal"
