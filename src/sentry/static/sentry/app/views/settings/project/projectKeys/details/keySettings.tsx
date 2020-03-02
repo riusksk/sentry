@@ -15,7 +15,7 @@ import BooleanField from 'app/views/settings/components/forms/booleanField';
 import Button from 'app/components/button';
 import Confirm from 'app/components/confirm';
 import DateTime from 'app/components/dateTime';
-import ExternalLink from 'app/components/links/externalLink';
+import Link from 'app/components/links/link';
 import Field from 'app/views/settings/components/forms/field';
 import Form from 'app/views/settings/components/forms/form';
 import KeyRateLimitsForm from 'app/views/settings/project/projectKeys/details/keyRateLimitsForm';
@@ -139,9 +139,12 @@ class KeySettings extends React.Component<Props, State> {
                       'Copy this script into your website to setup your JavaScript SDK without any additional configuration. [link]',
                       {
                         link: (
-                          <ExternalLink href="https://docs.sentry.io/platforms/javascript/#what-does-the-loader-provide">
+                          <Link
+                            to="https://docs.sentry.io/platforms/javascript/#what-does-the-loader-provide"
+                            external
+                          >
                             What does the script provide?
-                          </ExternalLink>
+                          </Link>
                         ),
                       }
                     )}

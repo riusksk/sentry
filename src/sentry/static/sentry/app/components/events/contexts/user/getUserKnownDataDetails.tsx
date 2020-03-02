@@ -2,7 +2,7 @@ import React from 'react';
 
 import {t} from 'app/locale';
 import {AvatarUser as UserType} from 'app/types';
-import ExternalLink from 'app/components/links/externalLink';
+import Link from 'app/components/links/link';
 
 import {UserKnownDataType} from './types';
 
@@ -44,9 +44,14 @@ function getUserKnownDataDetails(
         subject: t('Email'),
         value: data.email,
         subjectIcon: EMAIL_REGEX.test(data.email) && (
-          <ExternalLink href={`mailto:${data.email}`} className="external-icon">
+          <Link
+            to={`mailto:${data.email}`}
+            className="external-icon"
+            blank={false}
+            external
+          >
             <em className="icon-envelope" />
-          </ExternalLink>
+          </Link>
         ),
       };
     default:

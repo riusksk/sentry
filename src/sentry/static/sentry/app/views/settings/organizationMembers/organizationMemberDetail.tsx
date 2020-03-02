@@ -20,7 +20,7 @@ import AutoSelectText from 'app/components/autoSelectText';
 import Button from 'app/components/button';
 import Confirm from 'app/components/confirm';
 import DateTime from 'app/components/dateTime';
-import ExternalLink from 'app/components/links/externalLink';
+import Link from 'app/components/links/link';
 import Field from 'app/views/settings/components/forms/field';
 import NotFound from 'app/components/errors/notFound';
 import SettingsPageHeader from 'app/views/settings/components/settingsPageHeader';
@@ -241,7 +241,9 @@ class OrganizationMemberDetail extends AsyncView<Props, State> {
                   <div>
                     <DetailLabel>{t('Email')}</DetailLabel>
                     <div>
-                      <ExternalLink href={`mailto:${email}`}>{email}</ExternalLink>
+                      <Link to={`mailto:${email}`} blank={false} external>
+                        {email}
+                      </Link>
                     </div>
                   </div>
                   <div>

@@ -6,7 +6,7 @@ import {Panel, PanelAlert, PanelBody, PanelHeader} from 'app/components/panels';
 import {descopeFeatureName} from 'app/utils';
 import {t, tct} from 'app/locale';
 import EmptyMessage from 'app/views/settings/components/emptyMessage';
-import ExternalLink from 'app/components/links/externalLink';
+import Link from 'app/components/links/link';
 import PermissionAlert from 'app/views/settings/organization/permissionAlert';
 import SentryTypes from 'app/sentryTypes';
 import SettingsPageHeader from 'app/views/settings/components/settingsPageHeader';
@@ -59,7 +59,7 @@ class OrganizationAuthList extends React.Component {
                 {tct(
                   'Get started with Single Sign-on for your organization by selecting a provider. Read more in our [link:SSO documentation].',
                   {
-                    link: <ExternalLink href="https://docs.sentry.io/learn/sso/" />,
+                    link: <Link to="https://docs.sentry.io/learn/sso/" external />,
                   }
                 )}
               </PanelAlert>

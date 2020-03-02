@@ -1,11 +1,11 @@
 import React from 'react';
 
 import {shallow} from 'sentry-test/enzyme';
-import ExternalLink from 'app/components/links/externalLink';
+import Link from 'app/components/links/link';
 
-describe('ExternalLink', function() {
+describe('Link', function() {
   it('renders', function() {
-    const wrapper = shallow(<ExternalLink href="https://www.sentry.io/" />);
+    const wrapper = shallow(<Link to="https://www.sentry.io/" external />);
     expect(wrapper).toMatchSnapshot();
   });
 });

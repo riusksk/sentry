@@ -3,7 +3,7 @@ import React from 'react';
 
 import {t, tct} from 'app/locale';
 import AsyncView from 'app/views/asyncView';
-import ExternalLink from 'app/components/links/externalLink';
+import Link from 'app/components/links/link';
 import {Panel, PanelBody, PanelHeader} from 'app/components/panels';
 import PreviewFeature from 'app/components/previewFeature';
 import ReportUri, {
@@ -54,7 +54,10 @@ export default class ProjectExpectCtReports extends AsyncView {
       (CT) is a security standard which helps track and identify valid certificates, allowing identification of maliciously issued certificates`,
                 {
                   link: (
-                    <ExternalLink href="https://en.wikipedia.org/wiki/Certificate_Transparency" />
+                    <Link
+                      to="https://en.wikipedia.org/wiki/Certificate_Transparency"
+                      external
+                    />
                   ),
                 }
               )}

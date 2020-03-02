@@ -2,7 +2,7 @@ import React from 'react';
 
 import {ProjectKey} from 'app/views/settings/project/projectKeys/types';
 import {t, tct} from 'app/locale';
-import ExternalLink from 'app/components/links/externalLink';
+import Link from 'app/components/links/link';
 import Field from 'app/views/settings/components/forms/field';
 import TextCopyInput from 'app/views/settings/components/forms/textCopyInput';
 import getDynamicText from 'app/utils/getDynamicText';
@@ -96,9 +96,9 @@ class ProjectKeyCredentials extends React.Component<Props> {
               'Use this endpoint to upload [link], for example with Electron, Crashpad or Breakpad.',
               {
                 link: (
-                  <ExternalLink href="https://docs.sentry.io/clients/minidump/">
+                  <Link to="https://docs.sentry.io/clients/minidump/" external>
                     minidump crash reports
-                  </ExternalLink>
+                  </Link>
                 ),
               }
             )}

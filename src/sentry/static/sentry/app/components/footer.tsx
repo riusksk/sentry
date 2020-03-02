@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 
 import {t} from 'app/locale';
 import ConfigStore from 'app/stores/configStore';
-import ExternalLink from 'app/components/links/externalLink';
+import Link from 'app/components/links/link';
 import Hook from 'app/components/hook';
 import getDynamicText from 'app/utils/getDynamicText';
 import space from 'app/styles/space';
@@ -14,19 +14,21 @@ const Footer = () => {
     <footer>
       <div className="container">
         <div className="pull-right">
-          <FooterLink className="hidden-xs" href="/api/">
+          <FooterLink className="hidden-xs" to="/api/" external>
             {t('API')}
           </FooterLink>
-          <FooterLink href="/docs/">{t('Docs')}</FooterLink>
+          <FooterLink to="/docs/" external>
+            {t('Docs')}
+          </FooterLink>
           <FooterLink
             className="hidden-xs"
-            href="https://github.com/getsentry/sentry"
-            rel="noreferrer"
+            to="https://github.com/getsentry/sentry"
+            external
           >
             {t('Contribute')}
           </FooterLink>
           {config.isOnPremise && (
-            <FooterLink className="hidden-xs" href="/out/">
+            <FooterLink className="hidden-xs" to="/out/" external>
               {t('Migrate to SaaS')}
             </FooterLink>
           )}
@@ -53,7 +55,7 @@ const Footer = () => {
   );
 };
 
-const FooterLink = styled(ExternalLink)`
+const FooterLink = styled(Link)`
   &.focus-visible {
     outline: none;
     box-shadow: ${p => p.theme.blue} 0 2px 0;

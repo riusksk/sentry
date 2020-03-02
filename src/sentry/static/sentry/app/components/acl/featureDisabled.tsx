@@ -5,7 +5,7 @@ import {selectText} from 'app/utils/selectText';
 import {t, tct} from 'app/locale';
 import Alert from 'app/components/alert';
 import Button from 'app/components/button';
-import ExternalLink from 'app/components/links/externalLink';
+import Link from 'app/components/links/link';
 import space from 'app/styles/space';
 import {CONFIG_DOCS_URL} from 'app/constants';
 
@@ -98,7 +98,7 @@ class FeatureDisabled extends React.Component<Props, State> {
               details.`,
                 {
                   configFile: <code />,
-                  configLink: <ExternalLink href={CONFIG_DOCS_URL} />,
+                  configLink: <Link to={CONFIG_DOCS_URL} external />,
                 }
               )}
             </p>

@@ -3,7 +3,7 @@ import omit from 'lodash/omit';
 
 import CrumbTable from 'app/components/events/interfaces/breadcrumbs/crumbTable';
 import SummaryLine from 'app/components/events/interfaces/breadcrumbs/summaryLine';
-import ExternalLink from 'app/components/links/externalLink';
+import Link from 'app/components/links/link';
 import {getMeta} from 'app/components/events/meta/metaProxy';
 import {defined} from 'app/utils';
 import {t} from 'app/locale';
@@ -21,9 +21,9 @@ const HttpRenderer = ({crumb}: Props) => {
   const renderUrl = (url: any) => {
     if (typeof url === 'string') {
       return url.match(/^https?:\/\//) ? (
-        <ExternalLink data-test-id="http-renderer-external-link" href={url}>
+        <Link data-test-id="http-renderer-external-link" to={url} external>
           {url}
-        </ExternalLink>
+        </Link>
       ) : (
         <em>{url}</em>
       );

@@ -9,7 +9,7 @@ import {disablePlugin, enablePlugin} from 'app/actionCreators/plugins';
 import {t} from 'app/locale';
 import AsyncView from 'app/views/asyncView';
 import Button from 'app/components/button';
-import ExternalLink from 'app/components/links/externalLink';
+import Link from 'app/components/links/link';
 import PluginConfig from 'app/components/pluginConfig';
 import SettingsPageHeader from 'app/views/settings/components/settingsPageHeader';
 import withPlugins from 'app/utils/withPlugins';
@@ -222,9 +222,9 @@ class ProjectPluginDetails extends AsyncView {
                   <div>
                     <dt>{t('URL')}</dt>
                     <dd>
-                      <ExternalLink href={pluginDetails.author.url}>
+                      <Link to={pluginDetails.author.url} external>
                         {this.trimSchema(pluginDetails.author.url)}
-                      </ExternalLink>
+                      </Link>
                     </dd>
                   </div>
                 )}
@@ -245,7 +245,9 @@ class ProjectPluginDetails extends AsyncView {
                   <dl className="flat">
                     {pluginDetails.resourceLinks.map(({title, url}) => (
                       <dd key={url}>
-                        <ExternalLink href={url}>{title}</ExternalLink>
+                        <Link to={url} external>
+                          {title}
+                        </Link>
                       </dd>
                     ))}
                   </dl>

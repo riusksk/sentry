@@ -1,12 +1,12 @@
 import {css} from '@emotion/core';
 import {Flex} from 'reflexbox';
-import {Link} from 'react-router';
+import {Link as RouterLink} from 'react-router';
 import PropTypes from 'prop-types';
 import React from 'react';
 import styled from '@emotion/styled';
 
 import {t} from 'app/locale';
-import ExternalLink from 'app/components/links/externalLink';
+import Link from 'app/components/links/link';
 import Access from 'app/components/acl/access';
 import PluginIcon from 'app/plugins/components/pluginIcon';
 import SentryTypes from 'app/sentryTypes';
@@ -59,7 +59,7 @@ class ProjectPluginRow extends React.PureComponent {
     return (
       <Access access={['project:write']}>
         {({hasAccess}) => {
-          const LinkOrSpan = hasAccess ? Link : 'span';
+          const LinkOrSpan = hasAccess ? RouterLink : 'span';
 
           return (
             <Flex key={id} className={slug} flex="1" alignItems="center">
@@ -77,9 +77,9 @@ class ProjectPluginRow extends React.PureComponent {
                   </PluginName>
                   <div>
                     {author && (
-                      <ExternalLink css={grayText} href={author.url}>
+                      <Link css={grayText} href={author.url} external>
                         {author.name}
-                      </ExternalLink>
+                      </Link>
                     )}
                     {hasConfiguration && (
                       <span>

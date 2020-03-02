@@ -6,7 +6,7 @@ import {Repository} from 'app/types';
 import {t} from 'app/locale';
 import {getShortCommitHash} from 'app/utils';
 import Button from 'app/components/button';
-import ExternalLink from 'app/components/links/externalLink';
+import Link from 'app/components/links/link';
 import InlineSvg from 'app/components/inlineSvg';
 
 type CommitFormatterParameters = {
@@ -80,10 +80,10 @@ function CommitLink({inline, commitId, repository}: Props) {
       {shortId}
     </Button>
   ) : (
-    <ExternalLink className="inline-commit" href={commitUrl}>
+    <Link className="inline-commit" to={commitUrl} external>
       <CommitIcon src={providerData.icon} />
       {' ' + shortId}
-    </ExternalLink>
+    </Link>
   );
 }
 

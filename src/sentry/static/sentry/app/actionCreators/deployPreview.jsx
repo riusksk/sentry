@@ -3,7 +3,7 @@ import React from 'react';
 import {DEPLOY_PREVIEW_CONFIG} from 'app/constants';
 import {t, tct} from 'app/locale';
 import AlertActions from 'app/actions/alertActions';
-import ExternalLink from 'app/components/links/externalLink';
+import Link from 'app/components/links/link';
 
 export function displayDeployPreviewAlert() {
   if (!DEPLOY_PREVIEW_CONFIG) {
@@ -14,15 +14,15 @@ export function displayDeployPreviewAlert() {
   const repoName = repoUrl.match(/\w+\/\w+\/?$/)[0];
 
   const pullLink = (
-    <ExternalLink href={`${repoUrl}/pull/${reviewId}`}>
+    <Link to={`${repoUrl}/pull/${reviewId}`} external>
       {t('%s#%s', repoName, reviewId)}
-    </ExternalLink>
+    </Link>
   );
 
   const sha = (
-    <ExternalLink href={`${repoUrl}/commit/${commitRef}`}>
+    <Link to={`${repoUrl}/commit/${commitRef}`} external>
       @{commitRef.slice(0, 6)}
-    </ExternalLink>
+    </Link>
   );
 
   AlertActions.addAlert({

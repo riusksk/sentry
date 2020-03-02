@@ -1,11 +1,11 @@
-import {Link} from 'react-router';
+import {Link as RouterLink} from 'react-router';
 import PropTypes from 'prop-types';
 import React from 'react';
 import styled from '@emotion/styled';
 import {css} from '@emotion/core';
 import isPropValid from '@emotion/is-prop-valid';
 
-import ExternalLink from 'app/components/links/externalLink';
+import Link from 'app/components/links/link';
 import InlineSvg from 'app/components/inlineSvg';
 import Tooltip from 'app/components/tooltip';
 
@@ -282,7 +282,7 @@ const StyledButton = styled(
     // Get component to use based on existence of `to` or `href` properties
     // Can be react-router `Link`, `a`, or `button`
     if (props.to) {
-      return <Link ref={forwardRef} {...props} />;
+      return <RouterLink ref={forwardRef} {...props} />;
     }
 
     if (!props.href) {
@@ -290,7 +290,7 @@ const StyledButton = styled(
     }
 
     if (external && props.href) {
-      return <ExternalLink ref={forwardRef} {...props} />;
+      return <Link {...props} to={forwardRef} external />;
     }
 
     return <a ref={forwardRef} {...props} />;

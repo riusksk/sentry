@@ -997,44 +997,58 @@ exports[`ProjectCard renders 1`] = `
                               role="button"
                               size="xsmall"
                             >
-                              <ForwardRef
+                              <Link
                                 aria-disabled={false}
                                 aria-label="Track deploys"
                                 className="css-12ogwys-StyledButton edwq9my0"
+                                external={true}
                                 href="https://docs.sentry.io/learn/releases/"
                                 onClick={[Function]}
                                 role="button"
                                 size="xsmall"
+                                to={null}
                               >
-                                <a
+                                <Link
                                   aria-disabled={false}
                                   aria-label="Track deploys"
                                   className="css-12ogwys-StyledButton edwq9my0"
                                   href="https://docs.sentry.io/learn/releases/"
                                   onClick={[Function]}
-                                  rel="noreferrer noopener"
+                                  onlyActiveOnIndex={false}
                                   role="button"
                                   size="xsmall"
-                                  target="_blank"
+                                  style={Object {}}
+                                  to={null}
                                 >
-                                  <ButtonLabel
-                                    align="center"
+                                  <a
+                                    aria-disabled={false}
+                                    aria-label="Track deploys"
+                                    className="css-12ogwys-StyledButton edwq9my0"
+                                    href="https://docs.sentry.io/learn/releases/"
+                                    onClick={[Function]}
+                                    role="button"
                                     size="xsmall"
+                                    style={Object {}}
                                   >
-                                    <Component
+                                    <ButtonLabel
                                       align="center"
-                                      className="css-cmi7y3-ButtonLabel edwq9my1"
                                       size="xsmall"
                                     >
-                                      <span
+                                      <Component
+                                        align="center"
                                         className="css-cmi7y3-ButtonLabel edwq9my1"
+                                        size="xsmall"
                                       >
-                                        Track deploys
-                                      </span>
-                                    </Component>
-                                  </ButtonLabel>
-                                </a>
-                              </ForwardRef>
+                                        <span
+                                          className="css-cmi7y3-ButtonLabel edwq9my1"
+                                        >
+                                          Track deploys
+                                        </span>
+                                      </Component>
+                                    </ButtonLabel>
+                                  </a>
+                                </Link>
+                              </Link>
                             </Component>
                           </StyledButton>
                         </Button>

@@ -236,33 +236,30 @@ exports[`ProjectPluginRow renders 1`] = `
                         </PluginName>
                         <div>
                           <EmotionCssPropInternal
-                            __EMOTION_TYPE_PLEASE_DO_NOT_USE__={
-                              Object {
-                                "$$typeof": Symbol(react.forward_ref),
-                                "render": [Function],
-                              }
-                            }
+                            __EMOTION_TYPE_PLEASE_DO_NOT_USE__={[Function]}
                             css={
                               Object {
                                 "name": "1nx57m5-grayText",
                                 "styles": "color:#979ba0;;label:grayText;",
                               }
                             }
+                            external={true}
                             href="https://github.com/getsentry/sentry"
                           >
-                            <ForwardRef
+                            <Link
                               className="css-1nx57m5-grayText"
+                              external={true}
                               href="https://github.com/getsentry/sentry"
                             >
                               <a
                                 className="css-1nx57m5-grayText"
                                 href="https://github.com/getsentry/sentry"
-                                rel="noreferrer noopener"
+                                rel="noopener noreferrer"
                                 target="_blank"
                               >
                                 Sentry Team
                               </a>
-                            </ForwardRef>
+                            </Link>
                           </EmotionCssPropInternal>
                           <span>
                              

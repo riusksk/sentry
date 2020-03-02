@@ -883,17 +883,18 @@ exports[`ProjectPluginDetails renders 1`] = `
                               URL
                             </dt>
                             <dd>
-                              <ForwardRef
-                                href="https://github.com/getsentry/sentry"
+                              <Link
+                                external={true}
+                                to="https://github.com/getsentry/sentry"
                               >
                                 <a
                                   href="https://github.com/getsentry/sentry"
-                                  rel="noreferrer noopener"
+                                  rel="noopener noreferrer"
                                   target="_blank"
                                 >
                                   github.com/getsentry/sentry
                                 </a>
-                              </ForwardRef>
+                              </Link>
                             </dd>
                           </div>
                           <dt>

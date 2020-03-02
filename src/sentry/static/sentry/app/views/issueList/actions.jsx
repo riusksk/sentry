@@ -13,7 +13,7 @@ import theme from 'app/utils/theme';
 import ActionLink from 'app/components/actions/actionLink';
 import Checkbox from 'app/components/checkbox';
 import DropdownLink from 'app/components/dropdownLink';
-import ExternalLink from 'app/components/links/externalLink';
+import Link from 'app/components/links/link';
 import GroupStore from 'app/stores/groupStore';
 import IgnoreActions from 'app/components/actions/ignore';
 import MenuItem from 'app/components/menuItem';
@@ -64,7 +64,10 @@ const getConfirm = (numIssues, allInQuerySelected, query, queryCount) =>
             'Bulk deletion is only recommended for junk data. To clear your stream, consider resolving or ignoring. [link:When should I delete events?]',
             {
               link: (
-                <ExternalLink href="https://help.sentry.io/hc/en-us/articles/360003443113-When-should-I-delete-events" />
+                <Link
+                  to="https://help.sentry.io/hc/en-us/articles/360003443113-When-should-I-delete-events"
+                  external
+                />
               ),
             }
           )

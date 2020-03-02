@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import {t, tct} from 'app/locale';
 import AsyncView from 'app/views/asyncView';
-import ExternalLink from 'app/components/links/externalLink';
+import Link from 'app/components/links/link';
 import {Panel, PanelBody, PanelHeader} from 'app/components/panels';
 import ReportUri, {
   getSecurityDsn,
@@ -81,7 +81,10 @@ export default class ProjectHpkpReports extends AsyncView {
               supports capturing violations using the standard reporting hooks.`,
                 {
                   link: (
-                    <ExternalLink href="https://en.wikipedia.org/wiki/HTTP_Public_Key_Pinning" />
+                    <Link
+                      to="https://en.wikipedia.org/wiki/HTTP_Public_Key_Pinning"
+                      external
+                    />
                   ),
                 }
               )}

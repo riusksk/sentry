@@ -655,58 +655,62 @@ exports[`SharedGroupDetails renders 1`] = `
                       >
                         <FooterLink
                           className="hidden-xs"
-                          href="/api/"
+                          external={true}
+                          to="/api/"
                         >
-                          <ForwardRef
+                          <Link
                             className="hidden-xs css-aovf7d-FooterLink e1xhjlxg0"
-                            href="/api/"
+                            external={true}
+                            to="/api/"
                           >
                             <a
                               className="hidden-xs css-aovf7d-FooterLink e1xhjlxg0"
                               href="/api/"
-                              rel="noreferrer noopener"
+                              rel="noopener noreferrer"
                               target="_blank"
                             >
                               API
                             </a>
-                          </ForwardRef>
+                          </Link>
                         </FooterLink>
                         <FooterLink
-                          href="/docs/"
+                          external={true}
+                          to="/docs/"
                         >
-                          <ForwardRef
+                          <Link
                             className="css-aovf7d-FooterLink e1xhjlxg0"
-                            href="/docs/"
+                            external={true}
+                            to="/docs/"
                           >
                             <a
                               className="css-aovf7d-FooterLink e1xhjlxg0"
                               href="/docs/"
-                              rel="noreferrer noopener"
+                              rel="noopener noreferrer"
                               target="_blank"
                             >
                               Docs
                             </a>
-                          </ForwardRef>
+                          </Link>
                         </FooterLink>
                         <FooterLink
                           className="hidden-xs"
-                          href="https://github.com/getsentry/sentry"
-                          rel="noreferrer"
+                          external={true}
+                          to="https://github.com/getsentry/sentry"
                         >
-                          <ForwardRef
+                          <Link
                             className="hidden-xs css-aovf7d-FooterLink e1xhjlxg0"
-                            href="https://github.com/getsentry/sentry"
-                            rel="noreferrer"
+                            external={true}
+                            to="https://github.com/getsentry/sentry"
                           >
                             <a
                               className="hidden-xs css-aovf7d-FooterLink e1xhjlxg0"
                               href="https://github.com/getsentry/sentry"
-                              rel="noreferrer"
+                              rel="noopener noreferrer"
                               target="_blank"
                             >
                               Contribute
                             </a>
-                          </ForwardRef>
+                          </Link>
                         </FooterLink>
                       </div>
                       <a

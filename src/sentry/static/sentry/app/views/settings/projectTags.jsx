@@ -7,7 +7,7 @@ import Access from 'app/components/acl/access';
 import AsyncView from 'app/views/asyncView';
 import Button from 'app/components/button';
 import EmptyMessage from 'app/views/settings/components/emptyMessage';
-import ExternalLink from 'app/components/links/externalLink';
+import Link from 'app/components/links/link';
 import LinkWithConfirmation from 'app/components/links/linkWithConfirmation';
 import PermissionAlert from 'app/views/settings/project/permissionAlert';
 import SettingsPageHeader from 'app/views/settings/components/settingsPageHeader';
@@ -60,7 +60,7 @@ export default class ProjectTags extends AsyncView {
             `Each event in Sentry may be annotated with various tags (key and value pairs).
                  Learn how to [link:add custom tags].`,
             {
-              link: <ExternalLink href="https://docs.sentry.io/hosted/learn/context/" />,
+              link: <Link to="https://docs.sentry.io/hosted/learn/context/" external />,
             }
           )}
         </TextBlock>
@@ -73,7 +73,7 @@ export default class ProjectTags extends AsyncView {
               <EmptyMessage>
                 {tct('There are no tags, [link:learn how to add tags]', {
                   link: (
-                    <ExternalLink href="https://docs.sentry.io/hosted/learn/context/" />
+                    <Link to="https://docs.sentry.io/hosted/learn/context/" external />
                   ),
                 })}
               </EmptyMessage>

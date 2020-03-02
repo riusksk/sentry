@@ -8,7 +8,7 @@ import RichHttpContent from 'app/components/events/interfaces/richHttpContent/ri
 import {getFullUrl, getCurlCommand} from 'app/components/events/interfaces/utils';
 import {isUrl} from 'app/utils';
 import {t} from 'app/locale';
-import ExternalLink from 'app/components/links/externalLink';
+import Link from 'app/components/links/link';
 import {IconOpen} from 'app/icons';
 import space from 'app/styles/space';
 import Truncate from 'app/components/truncate';
@@ -84,7 +84,7 @@ class RequestInterface extends React.Component {
 
     const title = (
       <Header key="title">
-        <ExternalLink href={fullUrl} title={fullUrl}>
+        <Link to={fullUrl} title={fullUrl} external>
           <Path>
             <strong>{data.method || 'GET'}</strong>
             <Truncate
@@ -94,7 +94,7 @@ class RequestInterface extends React.Component {
             />
           </Path>
           {fullUrl && <StyledIconOpen size="xs" />}
-        </ExternalLink>
+        </Link>
         <small>{parsedUrl ? parsedUrl.hostname : ''}</small>
       </Header>
     );

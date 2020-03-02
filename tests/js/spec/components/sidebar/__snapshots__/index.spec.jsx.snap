@@ -1175,44 +1175,58 @@ exports[`Sidebar SidebarPanel can show Incidents in Sidebar Panel 1`] = `
                   role="button"
                   size="small"
                 >
-                  <ForwardRef
+                  <Link
                     aria-disabled={false}
                     aria-label="Learn more"
                     className="css-12ogwys-StyledButton edwq9my0"
+                    external={true}
                     href="https://status.sentry.io"
                     onClick={[Function]}
                     role="button"
                     size="small"
+                    to={null}
                   >
-                    <a
+                    <Link
                       aria-disabled={false}
                       aria-label="Learn more"
                       className="css-12ogwys-StyledButton edwq9my0"
                       href="https://status.sentry.io"
                       onClick={[Function]}
-                      rel="noreferrer noopener"
+                      onlyActiveOnIndex={false}
                       role="button"
                       size="small"
-                      target="_blank"
+                      style={Object {}}
+                      to={null}
                     >
-                      <ButtonLabel
-                        align="center"
+                      <a
+                        aria-disabled={false}
+                        aria-label="Learn more"
+                        className="css-12ogwys-StyledButton edwq9my0"
+                        href="https://status.sentry.io"
+                        onClick={[Function]}
+                        role="button"
                         size="small"
+                        style={Object {}}
                       >
-                        <Component
+                        <ButtonLabel
                           align="center"
-                          className="css-19gcr2f-ButtonLabel edwq9my1"
                           size="small"
                         >
-                          <span
+                          <Component
+                            align="center"
                             className="css-19gcr2f-ButtonLabel edwq9my1"
+                            size="small"
                           >
-                            Learn more
-                          </span>
-                        </Component>
-                      </ButtonLabel>
-                    </a>
-                  </ForwardRef>
+                            <span
+                              className="css-19gcr2f-ButtonLabel edwq9my1"
+                            >
+                              Learn more
+                            </span>
+                          </Component>
+                        </ButtonLabel>
+                      </a>
+                    </Link>
+                  </Link>
                 </Component>
               </StyledButton>
             </Button>

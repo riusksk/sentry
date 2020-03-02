@@ -5,7 +5,7 @@ import {defined, isUrl} from 'app/utils';
 import Tooltip from 'app/components/tooltip';
 import Truncate from 'app/components/truncate';
 import {IconQuestion} from 'app/icons/iconQuestion';
-import ExternalLink from 'app/components/links/externalLink';
+import Link from 'app/components/links/link';
 import AnnotatedText from 'app/components/events/meta/annotatedText';
 import {t} from 'app/locale';
 import {getMeta} from 'app/components/events/meta/metaProxy';
@@ -102,11 +102,12 @@ const FrameDefaultTitle = ({frame, platform}: Props) => {
 
     if (frame.absPath && isUrl(frame.absPath)) {
       title.push(
-        <ExternalLink
-          href={frame.absPath}
+        <Link
+          to={frame.absPath}
           className="icon-open"
           key="share"
           onClick={handleExternalLink}
+          external
         />
       );
     }

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 import {tct, t} from 'app/locale';
-import ExternalLink from 'app/components/links/externalLink';
+import Link from 'app/components/links/link';
 import Button from 'app/components/button';
 import {Panel} from 'app/components/panels';
 import space from 'app/styles/space';
@@ -57,7 +57,7 @@ export default class Intro extends React.Component<IntroProps> {
               `Getting started? Try running one of the example queries below.
             To learn more about how to use the query builder, [docs:see the docs].`,
               {
-                docs: <ExternalLink href="https://docs.sentry.io/product/discover/" />,
+                docs: <Link to="https://docs.sentry.io/product/discover/" external />,
               }
             )}
           </TextBlock>

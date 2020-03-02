@@ -4,7 +4,7 @@ import styled from '@emotion/styled';
 
 import {t} from 'app/locale';
 import Count from 'app/components/count';
-import ExternalLink from 'app/components/links/externalLink';
+import Link from 'app/components/links/link';
 import ListLink from 'app/components/links/listLink';
 import NavTabs from 'app/components/navTabs';
 import PageHeading from 'app/components/pageHeading';
@@ -52,9 +52,9 @@ export default class ReleaseHeader extends React.Component {
             </FullVersionWrapper>
             {!!release.url && (
               <div>
-                <ExternalLink href={release.url}>
+                <Link to={release.url} external>
                   <TextOverflow>{release.url}</TextOverflow>
-                </ExternalLink>
+                </Link>
               </div>
             )}
             <div className="release-meta">

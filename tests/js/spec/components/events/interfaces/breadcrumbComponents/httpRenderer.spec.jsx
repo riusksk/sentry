@@ -21,11 +21,13 @@ describe('HttpRenderer', function() {
 
       const summaryLine = httpRendererWrapper.prop('summary');
 
-      const summaryLineWrapper = shallow(summaryLine);
+      const summaryLineWrapper = mount(summaryLine);
       expect(summaryLineWrapper.find('strong').text()).toEqual('POST ');
       expect(
         summaryLineWrapper
           .find('[data-test-id="http-renderer-external-link"]')
+          // the reason we're using hostNodes is described here: https://github.com/enzymejs/enzyme/issues/836
+          .hostNodes()
           .text()
           .trim()
       ).toEqual('http://example.com/foo');

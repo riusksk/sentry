@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
 
 import {analytics} from 'app/utils/analytics';
-import ExternalLink from 'app/components/links/externalLink';
+import Link from 'app/components/links/link';
 import {Panel} from 'app/components/panels';
 import space from 'app/styles/space';
 
@@ -24,7 +24,7 @@ export default class ResourceCard extends React.Component {
 
     return (
       <ResourceCardWrapper onClick={this.recordClick}>
-        <StyledLink href={link}>
+        <StyledLink to={link} external>
           <StyledImg src={imgUrl} alt={title} />
           <StyledTitle>{title}</StyledTitle>
         </StyledLink>
@@ -41,7 +41,7 @@ const ResourceCardWrapper = styled(Panel)`
   margin-bottom: 0;
 `;
 
-const StyledLink = styled(ExternalLink)`
+const StyledLink = styled(Link)`
   flex: 1;
 `;
 

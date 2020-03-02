@@ -13,7 +13,7 @@ import {t, tct} from 'app/locale';
 import AsyncView from 'app/views/asyncView';
 import Button from 'app/components/button';
 import EmptyMessage from 'app/views/settings/components/emptyMessage';
-import ExternalLink from 'app/components/links/externalLink';
+import Link from 'app/components/links/link';
 import Pagination from 'app/components/pagination';
 import SettingsPageHeader from 'app/views/settings/components/settingsPageHeader';
 import TextBlock from 'app/views/settings/components/text/textBlock';
@@ -189,7 +189,7 @@ class ProjectKeys extends AsyncView<Props, State> {
           information on integrating Sentry with your application take a look at our
           [link:documentation].`,
             {
-              link: <ExternalLink href="https://docs.sentry.io/" />,
+              link: <Link to="https://docs.sentry.io/" external />,
               code: <code />,
             }
           )}

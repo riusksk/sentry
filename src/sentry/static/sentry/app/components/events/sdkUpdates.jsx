@@ -4,7 +4,7 @@ import styled from '@emotion/styled';
 
 import SentryTypes from 'app/sentryTypes';
 import Alert from 'app/components/alert';
-import ExternalLink from 'app/components/links/externalLink';
+import Link from 'app/components/links/link';
 import {t, tct} from 'app/locale';
 import space from 'app/styles/space';
 import EventDataSection from 'app/components/events/eventDataSection';
@@ -80,7 +80,11 @@ class EventSdkUpdateSuggestion extends React.Component {
       return content;
     }
 
-    return <ExternalLink href={href}>{content}</ExternalLink>;
+    return (
+      <Link to={href} external>
+        {content}
+      </Link>
+    );
   }
 
   render() {

@@ -7,7 +7,7 @@ import AsyncComponent from 'app/components/asyncComponent';
 import AutoSelectText from 'app/components/autoSelectText';
 import SentryDocumentTitle from 'app/components/sentryDocumentTitle';
 import Button from 'app/components/button';
-import ExternalLink from 'app/components/links/externalLink';
+import Link from 'app/components/links/link';
 import PlatformPicker from 'app/components/platformPicker';
 import SentryTypes from 'app/sentryTypes';
 import SettingsPageHeader from 'app/views/settings/components/settingsPageHeader';
@@ -90,7 +90,7 @@ class ProjectInstallOverview extends AsyncComponent {
           {tct(
             `For a complete list of client integrations, please see
              [docLink:our in-depth documentation].`,
-            {docLink: <ExternalLink href="https://docs.sentry.io" />}
+            {docLink: <Link to="https://docs.sentry.io" external />}
           )}
         </p>
       </div>

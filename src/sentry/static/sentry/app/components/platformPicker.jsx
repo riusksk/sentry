@@ -9,7 +9,7 @@ import {inputStyles} from 'app/styles/input';
 import {t, tct} from 'app/locale';
 import Button from 'app/components/button';
 import EmptyMessage from 'app/views/settings/components/emptyMessage';
-import ExternalLink from 'app/components/links/externalLink';
+import Links from 'app/components/links/link';
 import InlineSvg from 'app/components/inlineSvg';
 import ListLink from 'app/components/links/listLink';
 import NavTabs from 'app/components/navTabs';
@@ -138,7 +138,10 @@ class PlatformPicker extends React.Component {
               [search:searching for Sentry clients] or contacting support.`,
               {
                 search: (
-                  <ExternalLink href="https://github.com/search?q=-org%3Agetsentry+topic%3Asentry&type=Repositories" />
+                  <Links
+                    to="https://github.com/search?q=-org%3Agetsentry+topic%3Asentry&type=Repositories"
+                    external
+                  />
                 ),
               }
             )}

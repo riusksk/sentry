@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import ExternalLink from 'app/components/links/externalLink';
+import Link from 'app/components/links/link';
 import InlineSvg from 'app/components/inlineSvg';
 
 class PullRequestLink extends React.Component {
@@ -40,14 +40,13 @@ class PullRequestLink extends React.Component {
     }
 
     return pullRequest.externalUrl ? (
-      <ExternalLink
+      <Link
         className={this.props.inline ? 'inline-commit' : 'btn btn-default btn-sm'}
-        href={pullRequest.externalUrl}
-        target="_blank"
+        to={pullRequest.externalUrl}
       >
         {icon}&nbsp; {this.props.inline ? '' : ' '}
         {displayId}
-      </ExternalLink>
+      </Link>
     ) : (
       <span>{displayId}</span>
     );

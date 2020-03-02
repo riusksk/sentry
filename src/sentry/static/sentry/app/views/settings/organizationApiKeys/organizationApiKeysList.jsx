@@ -7,7 +7,6 @@ import {t, tct} from 'app/locale';
 import AutoSelectText from 'app/components/autoSelectText';
 import Button from 'app/components/button';
 import EmptyMessage from 'app/views/settings/components/emptyMessage';
-import ExternalLink from 'app/components/links/externalLink';
 import Link from 'app/components/links/link';
 import LinkWithConfirmation from 'app/components/links/linkWithConfirmation';
 import SettingsPageHeader from 'app/views/settings/components/settingsPageHeader';
@@ -49,7 +48,7 @@ class OrganizationApiKeysList extends React.Component {
           If you're looking to configure a Sentry client, you'll need a
           client key which is available in your project settings.`,
             {
-              api: <ExternalLink href="https://docs.sentry.io/hosted/api/" />,
+              api: <Link to="https://docs.sentry.io/hosted/api/" external />,
             }
           )}
         </TextBlock>

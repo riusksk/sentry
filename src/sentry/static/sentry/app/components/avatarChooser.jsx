@@ -12,7 +12,7 @@ import {Panel, PanelBody, PanelHeader} from './panels';
 import Avatar from './avatar';
 import AvatarCropper from './avatarCropper';
 import Button from './button';
-import ExternalLink from './links/externalLink';
+import Link from './links/link';
 import LoadingError from './loadingError';
 import LoadingIndicator from './loadingIndicator';
 
@@ -177,7 +177,9 @@ class AvatarChooser extends React.Component {
               {allowGravatar && avatarType === 'gravatar' && (
                 <Well>
                   {t('Gravatars are managed through ')}
-                  <ExternalLink href="http://gravatar.com">Gravatar.com</ExternalLink>
+                  <Link to="http://gravatar.com" external>
+                    Gravatar.com
+                  </Link>
                 </Well>
               )}
 

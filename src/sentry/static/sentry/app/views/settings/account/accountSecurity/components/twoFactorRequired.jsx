@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 
 import {tct} from 'app/locale';
 import Alert from 'app/components/alert';
-import ExternalLink from 'app/components/links/externalLink';
+import Link from 'app/components/links/link';
 import space from 'app/styles/space';
 import getPendingInvite from 'app/utils/getPendingInvite';
 
@@ -14,7 +14,7 @@ const TwoFactorRequired = () =>
         'You have been invited to an organization that requires [link:two-factor authentication].' +
           ' Setup two-factor authentication below to join your organization.',
         {
-          link: <ExternalLink href="https://docs.sentry.io/accounts/require-2fa/" />,
+          link: <Link to="https://docs.sentry.io/accounts/require-2fa/" external />,
         }
       )}
     </StyledAlert>

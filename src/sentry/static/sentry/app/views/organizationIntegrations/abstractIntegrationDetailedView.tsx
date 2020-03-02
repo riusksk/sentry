@@ -22,7 +22,7 @@ import {
   SingleIntegrationEvent,
 } from 'app/utils/integrationUtil';
 import Alert, {Props as AlertProps} from 'app/components/alert';
-import ExternalLink from 'app/components/links/externalLink';
+import Link from 'app/components/links/link';
 import marked, {singleLineRenderer} from 'app/utils/marked';
 import {IconClose, IconGithub, IconGeneric, IconDocs} from 'app/icons';
 
@@ -344,7 +344,9 @@ class AbstractIntegrationDetailedView<
             {this.resourceLinks.map(({title, url}) => (
               <ExternalLinkContainer key={url}>
                 {this.getIcon(title)}
-                <ExternalLink href={url}>{t(title)}</ExternalLink>
+                <Link to={url} external>
+                  {t(title)}
+                </Link>
               </ExternalLinkContainer>
             ))}
           </Metadata>
