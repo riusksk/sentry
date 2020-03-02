@@ -42,11 +42,14 @@ export default class Aggregations extends React.Component<AggregationsProps> {
           <SidebarLabel>{t('Aggregation')}</SidebarLabel>
           {!disabled && (
             <AddText>
-              {`(`}
-              <Link to="#" onClick={() => this.addRow()}>
+              {'('}
+              <Link
+                data-test-id="aggregations-add-text-link"
+                onClick={() => this.addRow()}
+              >
                 {t('Add')}
               </Link>
-              {`)`}
+              {')'}
             </AddText>
           )}
         </div>

@@ -109,9 +109,13 @@ type NameProps = {
   hideEmail: boolean;
 } & LinkProps;
 
-const StyledName = styled<NameProps>(({useLink, to, ...props}) => {
+const StyledName = styled<LinkProps>(({useLink, to, ...props}) => {
   const forwardProps = omit(props, 'hideEmail');
-  return useLink ? <Link to={to} {...forwardProps} /> : <span {...forwardProps} />;
+  return useLink ? (
+    <Link to={to} data-test-id="member-badge-styled-name-link" {...forwardProps} />
+  ) : (
+    <span {...forwardProps} />
+  );
 })`
   font-weight: ${(p: NameProps) => (p.hideEmail ? 'inherit' : 'bold')};
   line-height: 1.15em;

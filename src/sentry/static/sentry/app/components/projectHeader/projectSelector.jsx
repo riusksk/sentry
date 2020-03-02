@@ -28,7 +28,7 @@ const ProjectHeaderProjectSelector = withRouter(
      */
     getProjectUrlProps(project) {
       const org = this.props.organization;
-      const path = `/${org.slug}/${project.slug}/`;
+      const path = `/${org.slug}/${project ? `${project.slug}/` : ''}`;
 
       if (this.context.location) {
         return {to: path};

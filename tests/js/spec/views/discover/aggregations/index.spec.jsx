@@ -35,7 +35,9 @@ describe('Aggregations', function() {
   it('addRow()', function() {
     wrapper
       .find('AddText')
-      .find('Link')
+      .find('[data-test-id="aggregations-add-text-link"]')
+      // the reason we're using hostNodes is described here: https://github.com/enzymejs/enzyme/issues/836
+      .hostNodes()
       .simulate('click');
     expect(onChangeMock).toHaveBeenCalledWith([[null, null, null]]);
   });

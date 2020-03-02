@@ -6,16 +6,16 @@ import {Location, LocationDescriptor} from 'history';
 
 type ToLocationFunction = (location: Location) => LocationDescriptor;
 
-export type LinkProps<T extends boolean = false> = {
-  to: T extends true ? string : ToLocationFunction | LocationDescriptor;
-  external?: T;
+export type LinkProps = {
+  to?: string | ToLocationFunction | LocationDescriptor;
+  external?: boolean;
   className?: string;
   blank?: boolean;
   children?: React.ReactNode;
   onClick?: (event: React.MouseEvent<HTMLAnchorElement>) => void;
 };
 
-const Link = <T extends boolean>({to, external, blank = true, ...props}: LinkProps<T>) =>
+const Link = ({to = '#', external, blank = true, ...props}: LinkProps) =>
   external && typeof to === 'string' ? (
     <a
       href={to}
@@ -28,7 +28,7 @@ const Link = <T extends boolean>({to, external, blank = true, ...props}: LinkPro
   );
 
 Link.propTypes = {
-  to: PropTypes.any.isRequired,
+  to: PropTypes.any,
   external: PropTypes.bool,
   className: PropTypes.string,
   blank: PropTypes.bool,

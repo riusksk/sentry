@@ -76,7 +76,7 @@ class AcceptOrganizationInvite extends AsyncView<Props, State> {
           'Your account ([email]) is already a member of this organization. [switchLink:Switch accounts]?',
           {
             email: user.email,
-            switchLink: <Link to="#" onClick={this.handleLogout} external />,
+            switchLink: <Link onClick={this.handleLogout} external />,
           }
         )}
       </Alert>

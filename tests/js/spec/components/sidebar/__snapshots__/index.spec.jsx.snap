@@ -955,24 +955,33 @@ exports[`Sidebar SidebarHelp can toggle help menu 1`] = `
         >
           <Link
             className="css-3v825n-MenuItemLink e1ru2gxu1"
-            href="https://forum.sentry.io/"
             target="_blank"
+            to="https://forum.sentry.io/"
           >
-            <a
+            <Link
               className="css-3v825n-MenuItemLink e1ru2gxu1"
-              href="https://forum.sentry.io/"
+              onlyActiveOnIndex={false}
+              style={Object {}}
               target="_blank"
+              to="https://forum.sentry.io/"
             >
-              <MenuItemLabel
-                hasMenu={false}
+              <a
+                className="css-3v825n-MenuItemLink e1ru2gxu1"
+                onClick={[Function]}
+                style={Object {}}
+                target="_blank"
               >
-                <span
-                  className="css-1ug1il4-MenuItemLabel-MenuItemLabel e1ru2gxu0"
+                <MenuItemLabel
+                  hasMenu={false}
                 >
-                  Community Discussions
-                </span>
-              </MenuItemLabel>
-            </a>
+                  <span
+                    className="css-1ug1il4-MenuItemLabel-MenuItemLabel e1ru2gxu0"
+                  >
+                    Community Discussions
+                  </span>
+                </MenuItemLabel>
+              </a>
+            </Link>
           </Link>
         </Component>
       </MenuItemLink>
@@ -992,24 +1001,33 @@ exports[`Sidebar SidebarHelp can toggle help menu 1`] = `
         >
           <Link
             className="css-3v825n-MenuItemLink e1ru2gxu1"
-            href="https://status.sentry.io/"
             target="_blank"
+            to="https://status.sentry.io/"
           >
-            <a
+            <Link
               className="css-3v825n-MenuItemLink e1ru2gxu1"
-              href="https://status.sentry.io/"
+              onlyActiveOnIndex={false}
+              style={Object {}}
               target="_blank"
+              to="https://status.sentry.io/"
             >
-              <MenuItemLabel
-                hasMenu={false}
+              <a
+                className="css-3v825n-MenuItemLink e1ru2gxu1"
+                onClick={[Function]}
+                style={Object {}}
+                target="_blank"
               >
-                <span
-                  className="css-1ug1il4-MenuItemLabel-MenuItemLabel e1ru2gxu0"
+                <MenuItemLabel
+                  hasMenu={false}
                 >
-                  Service Status
-                </span>
-              </MenuItemLabel>
-            </a>
+                  <span
+                    className="css-1ug1il4-MenuItemLabel-MenuItemLabel e1ru2gxu0"
+                  >
+                    Service Status
+                  </span>
+                </MenuItemLabel>
+              </a>
+            </Link>
           </Link>
         </Component>
       </MenuItemLink>
@@ -1449,25 +1467,16 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                     "/settings/org-slug/",
                                   ],
                                   Array [
-                                    "/organizations/org-slug/projects/",
+                                    "#",
                                   ],
                                   Array [
-                                    "/organizations/org-slug/issues/",
+                                    "#",
                                   ],
                                   Array [
-                                    "/organizations/org-slug/releases/",
+                                    "#",
                                   ],
                                   Array [
-                                    "/organizations/org-slug/user-feedback/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/activity/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/stats/",
-                                  ],
-                                  Array [
-                                    "/settings/org-slug/",
+                                    "#",
                                   ],
                                   Array [
                                     "/organizations/org-slug/projects/",
@@ -1491,25 +1500,13 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                     "/settings/org-slug/",
                                   ],
                                   Array [
-                                    "/organizations/org-slug/projects/",
+                                    "#",
                                   ],
                                   Array [
-                                    "/organizations/org-slug/issues/",
+                                    "#",
                                   ],
                                   Array [
-                                    "/organizations/org-slug/releases/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/user-feedback/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/activity/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/stats/",
-                                  ],
-                                  Array [
-                                    "/settings/org-slug/",
+                                    "#",
                                   ],
                                   Array [
                                     "/organizations/org-slug/projects/",
@@ -1533,7 +1530,70 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                     "/settings/org-slug/",
                                   ],
                                   Array [
-                                    "/settings/org-slug/support/",
+                                    "#",
+                                  ],
+                                  Array [
+                                    "#",
+                                  ],
+                                  Array [
+                                    "#",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/projects/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/issues/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/releases/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/user-feedback/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/activity/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/stats/",
+                                  ],
+                                  Array [
+                                    "/settings/org-slug/",
+                                  ],
+                                  Array [
+                                    "#",
+                                  ],
+                                  Array [
+                                    "#",
+                                  ],
+                                  Array [
+                                    "#",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/projects/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/issues/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/releases/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/user-feedback/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/activity/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/stats/",
+                                  ],
+                                  Array [
+                                    "/settings/org-slug/",
+                                  ],
+                                  Array [
+                                    "#",
+                                  ],
+                                  Array [
+                                    "#",
                                   ],
                                   Array [
                                     "/settings/org-slug/support/",
@@ -1552,9 +1612,72 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                   ],
                                   Array [
                                     "/settings/org-slug/support/",
+                                  ],
+                                  Array [
+                                    "#",
                                   ],
                                 ],
                                 "results": Array [
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
                                   Object {
                                     "type": "return",
                                     "value": undefined,
@@ -2118,25 +2241,16 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                     "/settings/org-slug/",
                                   ],
                                   Array [
-                                    "/organizations/org-slug/projects/",
+                                    "#",
                                   ],
                                   Array [
-                                    "/organizations/org-slug/issues/",
+                                    "#",
                                   ],
                                   Array [
-                                    "/organizations/org-slug/releases/",
+                                    "#",
                                   ],
                                   Array [
-                                    "/organizations/org-slug/user-feedback/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/activity/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/stats/",
-                                  ],
-                                  Array [
-                                    "/settings/org-slug/",
+                                    "#",
                                   ],
                                   Array [
                                     "/organizations/org-slug/projects/",
@@ -2160,25 +2274,13 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                     "/settings/org-slug/",
                                   ],
                                   Array [
-                                    "/organizations/org-slug/projects/",
+                                    "#",
                                   ],
                                   Array [
-                                    "/organizations/org-slug/issues/",
+                                    "#",
                                   ],
                                   Array [
-                                    "/organizations/org-slug/releases/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/user-feedback/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/activity/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/stats/",
-                                  ],
-                                  Array [
-                                    "/settings/org-slug/",
+                                    "#",
                                   ],
                                   Array [
                                     "/organizations/org-slug/projects/",
@@ -2202,7 +2304,70 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                     "/settings/org-slug/",
                                   ],
                                   Array [
-                                    "/settings/org-slug/support/",
+                                    "#",
+                                  ],
+                                  Array [
+                                    "#",
+                                  ],
+                                  Array [
+                                    "#",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/projects/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/issues/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/releases/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/user-feedback/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/activity/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/stats/",
+                                  ],
+                                  Array [
+                                    "/settings/org-slug/",
+                                  ],
+                                  Array [
+                                    "#",
+                                  ],
+                                  Array [
+                                    "#",
+                                  ],
+                                  Array [
+                                    "#",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/projects/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/issues/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/releases/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/user-feedback/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/activity/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/stats/",
+                                  ],
+                                  Array [
+                                    "/settings/org-slug/",
+                                  ],
+                                  Array [
+                                    "#",
+                                  ],
+                                  Array [
+                                    "#",
                                   ],
                                   Array [
                                     "/settings/org-slug/support/",
@@ -2221,9 +2386,72 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                   ],
                                   Array [
                                     "/settings/org-slug/support/",
+                                  ],
+                                  Array [
+                                    "#",
                                   ],
                                 ],
                                 "results": Array [
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
                                   Object {
                                     "type": "return",
                                     "value": undefined,
@@ -2787,25 +3015,16 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                     "/settings/org-slug/",
                                   ],
                                   Array [
-                                    "/organizations/org-slug/projects/",
+                                    "#",
                                   ],
                                   Array [
-                                    "/organizations/org-slug/issues/",
+                                    "#",
                                   ],
                                   Array [
-                                    "/organizations/org-slug/releases/",
+                                    "#",
                                   ],
                                   Array [
-                                    "/organizations/org-slug/user-feedback/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/activity/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/stats/",
-                                  ],
-                                  Array [
-                                    "/settings/org-slug/",
+                                    "#",
                                   ],
                                   Array [
                                     "/organizations/org-slug/projects/",
@@ -2829,25 +3048,13 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                     "/settings/org-slug/",
                                   ],
                                   Array [
-                                    "/organizations/org-slug/projects/",
+                                    "#",
                                   ],
                                   Array [
-                                    "/organizations/org-slug/issues/",
+                                    "#",
                                   ],
                                   Array [
-                                    "/organizations/org-slug/releases/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/user-feedback/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/activity/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/stats/",
-                                  ],
-                                  Array [
-                                    "/settings/org-slug/",
+                                    "#",
                                   ],
                                   Array [
                                     "/organizations/org-slug/projects/",
@@ -2871,7 +3078,70 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                     "/settings/org-slug/",
                                   ],
                                   Array [
-                                    "/settings/org-slug/support/",
+                                    "#",
+                                  ],
+                                  Array [
+                                    "#",
+                                  ],
+                                  Array [
+                                    "#",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/projects/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/issues/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/releases/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/user-feedback/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/activity/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/stats/",
+                                  ],
+                                  Array [
+                                    "/settings/org-slug/",
+                                  ],
+                                  Array [
+                                    "#",
+                                  ],
+                                  Array [
+                                    "#",
+                                  ],
+                                  Array [
+                                    "#",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/projects/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/issues/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/releases/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/user-feedback/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/activity/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/stats/",
+                                  ],
+                                  Array [
+                                    "/settings/org-slug/",
+                                  ],
+                                  Array [
+                                    "#",
+                                  ],
+                                  Array [
+                                    "#",
                                   ],
                                   Array [
                                     "/settings/org-slug/support/",
@@ -2890,9 +3160,72 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                   ],
                                   Array [
                                     "/settings/org-slug/support/",
+                                  ],
+                                  Array [
+                                    "#",
                                   ],
                                 ],
                                 "results": Array [
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
                                   Object {
                                     "type": "return",
                                     "value": undefined,
@@ -3526,25 +3859,16 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                     "/settings/org-slug/",
                                   ],
                                   Array [
-                                    "/organizations/org-slug/projects/",
+                                    "#",
                                   ],
                                   Array [
-                                    "/organizations/org-slug/issues/",
+                                    "#",
                                   ],
                                   Array [
-                                    "/organizations/org-slug/releases/",
+                                    "#",
                                   ],
                                   Array [
-                                    "/organizations/org-slug/user-feedback/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/activity/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/stats/",
-                                  ],
-                                  Array [
-                                    "/settings/org-slug/",
+                                    "#",
                                   ],
                                   Array [
                                     "/organizations/org-slug/projects/",
@@ -3568,25 +3892,13 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                     "/settings/org-slug/",
                                   ],
                                   Array [
-                                    "/organizations/org-slug/projects/",
+                                    "#",
                                   ],
                                   Array [
-                                    "/organizations/org-slug/issues/",
+                                    "#",
                                   ],
                                   Array [
-                                    "/organizations/org-slug/releases/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/user-feedback/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/activity/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/stats/",
-                                  ],
-                                  Array [
-                                    "/settings/org-slug/",
+                                    "#",
                                   ],
                                   Array [
                                     "/organizations/org-slug/projects/",
@@ -3610,7 +3922,70 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                     "/settings/org-slug/",
                                   ],
                                   Array [
-                                    "/settings/org-slug/support/",
+                                    "#",
+                                  ],
+                                  Array [
+                                    "#",
+                                  ],
+                                  Array [
+                                    "#",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/projects/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/issues/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/releases/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/user-feedback/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/activity/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/stats/",
+                                  ],
+                                  Array [
+                                    "/settings/org-slug/",
+                                  ],
+                                  Array [
+                                    "#",
+                                  ],
+                                  Array [
+                                    "#",
+                                  ],
+                                  Array [
+                                    "#",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/projects/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/issues/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/releases/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/user-feedback/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/activity/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/stats/",
+                                  ],
+                                  Array [
+                                    "/settings/org-slug/",
+                                  ],
+                                  Array [
+                                    "#",
+                                  ],
+                                  Array [
+                                    "#",
                                   ],
                                   Array [
                                     "/settings/org-slug/support/",
@@ -3629,9 +4004,72 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                   ],
                                   Array [
                                     "/settings/org-slug/support/",
+                                  ],
+                                  Array [
+                                    "#",
                                   ],
                                 ],
                                 "results": Array [
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
                                   Object {
                                     "type": "return",
                                     "value": undefined,
@@ -4268,25 +4706,16 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                     "/settings/org-slug/",
                                   ],
                                   Array [
-                                    "/organizations/org-slug/projects/",
+                                    "#",
                                   ],
                                   Array [
-                                    "/organizations/org-slug/issues/",
+                                    "#",
                                   ],
                                   Array [
-                                    "/organizations/org-slug/releases/",
+                                    "#",
                                   ],
                                   Array [
-                                    "/organizations/org-slug/user-feedback/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/activity/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/stats/",
-                                  ],
-                                  Array [
-                                    "/settings/org-slug/",
+                                    "#",
                                   ],
                                   Array [
                                     "/organizations/org-slug/projects/",
@@ -4310,25 +4739,13 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                     "/settings/org-slug/",
                                   ],
                                   Array [
-                                    "/organizations/org-slug/projects/",
+                                    "#",
                                   ],
                                   Array [
-                                    "/organizations/org-slug/issues/",
+                                    "#",
                                   ],
                                   Array [
-                                    "/organizations/org-slug/releases/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/user-feedback/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/activity/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/stats/",
-                                  ],
-                                  Array [
-                                    "/settings/org-slug/",
+                                    "#",
                                   ],
                                   Array [
                                     "/organizations/org-slug/projects/",
@@ -4352,7 +4769,70 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                     "/settings/org-slug/",
                                   ],
                                   Array [
-                                    "/settings/org-slug/support/",
+                                    "#",
+                                  ],
+                                  Array [
+                                    "#",
+                                  ],
+                                  Array [
+                                    "#",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/projects/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/issues/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/releases/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/user-feedback/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/activity/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/stats/",
+                                  ],
+                                  Array [
+                                    "/settings/org-slug/",
+                                  ],
+                                  Array [
+                                    "#",
+                                  ],
+                                  Array [
+                                    "#",
+                                  ],
+                                  Array [
+                                    "#",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/projects/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/issues/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/releases/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/user-feedback/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/activity/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/stats/",
+                                  ],
+                                  Array [
+                                    "/settings/org-slug/",
+                                  ],
+                                  Array [
+                                    "#",
+                                  ],
+                                  Array [
+                                    "#",
                                   ],
                                   Array [
                                     "/settings/org-slug/support/",
@@ -4371,9 +4851,72 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                   ],
                                   Array [
                                     "/settings/org-slug/support/",
+                                  ],
+                                  Array [
+                                    "#",
                                   ],
                                 ],
                                 "results": Array [
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
                                   Object {
                                     "type": "return",
                                     "value": undefined,
@@ -5023,25 +5566,16 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                     "/settings/org-slug/",
                                   ],
                                   Array [
-                                    "/organizations/org-slug/projects/",
+                                    "#",
                                   ],
                                   Array [
-                                    "/organizations/org-slug/issues/",
+                                    "#",
                                   ],
                                   Array [
-                                    "/organizations/org-slug/releases/",
+                                    "#",
                                   ],
                                   Array [
-                                    "/organizations/org-slug/user-feedback/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/activity/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/stats/",
-                                  ],
-                                  Array [
-                                    "/settings/org-slug/",
+                                    "#",
                                   ],
                                   Array [
                                     "/organizations/org-slug/projects/",
@@ -5065,25 +5599,13 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                     "/settings/org-slug/",
                                   ],
                                   Array [
-                                    "/organizations/org-slug/projects/",
+                                    "#",
                                   ],
                                   Array [
-                                    "/organizations/org-slug/issues/",
+                                    "#",
                                   ],
                                   Array [
-                                    "/organizations/org-slug/releases/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/user-feedback/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/activity/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/stats/",
-                                  ],
-                                  Array [
-                                    "/settings/org-slug/",
+                                    "#",
                                   ],
                                   Array [
                                     "/organizations/org-slug/projects/",
@@ -5107,7 +5629,70 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                     "/settings/org-slug/",
                                   ],
                                   Array [
-                                    "/settings/org-slug/support/",
+                                    "#",
+                                  ],
+                                  Array [
+                                    "#",
+                                  ],
+                                  Array [
+                                    "#",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/projects/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/issues/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/releases/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/user-feedback/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/activity/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/stats/",
+                                  ],
+                                  Array [
+                                    "/settings/org-slug/",
+                                  ],
+                                  Array [
+                                    "#",
+                                  ],
+                                  Array [
+                                    "#",
+                                  ],
+                                  Array [
+                                    "#",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/projects/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/issues/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/releases/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/user-feedback/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/activity/",
+                                  ],
+                                  Array [
+                                    "/organizations/org-slug/stats/",
+                                  ],
+                                  Array [
+                                    "/settings/org-slug/",
+                                  ],
+                                  Array [
+                                    "#",
+                                  ],
+                                  Array [
+                                    "#",
                                   ],
                                   Array [
                                     "/settings/org-slug/support/",
@@ -5126,9 +5711,72 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                   ],
                                   Array [
                                     "/settings/org-slug/support/",
+                                  ],
+                                  Array [
+                                    "#",
                                   ],
                                 ],
                                 "results": Array [
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
+                                  Object {
+                                    "type": "return",
+                                    "value": undefined,
+                                  },
                                   Object {
                                     "type": "return",
                                     "value": undefined,
@@ -5383,743 +6031,6 @@ exports[`Sidebar can have onboarding feature 1`] = `
                                           >
                                             See which releases cause errors. Set up releases and associate commits to gain additional context when determining the
         cause of an issue and unlock the ability to resolve issues via commit message.
-                                          </p>
-                                        </Description>
-                                      </div>
-                                    </ActionTarget>
-                                  </Action>
-                                  <SkipButton
-                                    onClick={[Function]}
-                                    size="xsmall"
-                                  >
-                                    <forwardRef<Button>
-                                      className="css-14778x-SkipButton ev4hf7u8"
-                                      onClick={[Function]}
-                                      size="xsmall"
-                                    >
-                                      <Button
-                                        align="center"
-                                        className="css-14778x-SkipButton ev4hf7u8"
-                                        disabled={false}
-                                        forwardRef={null}
-                                        onClick={[Function]}
-                                        size="xsmall"
-                                      >
-                                        <StyledButton
-                                          aria-disabled={false}
-                                          aria-label="Skip task"
-                                          className="css-14778x-SkipButton ev4hf7u8"
-                                          disabled={false}
-                                          forwardRef={null}
-                                          onClick={[Function]}
-                                          role="button"
-                                          size="xsmall"
-                                        >
-                                          <Component
-                                            aria-disabled={false}
-                                            aria-label="Skip task"
-                                            className="ev4hf7u8 css-sbtm7d-StyledButton-SkipButton edwq9my0"
-                                            forwardRef={null}
-                                            onClick={[Function]}
-                                            role="button"
-                                            size="xsmall"
-                                          >
-                                            <button
-                                              aria-disabled={false}
-                                              aria-label="Skip task"
-                                              className="ev4hf7u8 css-sbtm7d-StyledButton-SkipButton edwq9my0"
-                                              onClick={[Function]}
-                                              role="button"
-                                              size="xsmall"
-                                            >
-                                              <ButtonLabel
-                                                align="center"
-                                                size="xsmall"
-                                              >
-                                                <Component
-                                                  align="center"
-                                                  className="css-cmi7y3-ButtonLabel edwq9my1"
-                                                  size="xsmall"
-                                                >
-                                                  <span
-                                                    className="css-cmi7y3-ButtonLabel edwq9my1"
-                                                  >
-                                                    Skip task
-                                                  </span>
-                                                </Component>
-                                              </ButtonLabel>
-                                            </button>
-                                          </Component>
-                                        </StyledButton>
-                                      </Button>
-                                    </forwardRef<Button>>
-                                  </SkipButton>
-                                </div>
-                              </Content>
-                              <Confirmation
-                                hide={true}
-                                onDismiss={[Function]}
-                                onSkip={[Function]}
-                                orgId="org-slug"
-                              >
-                                <Component
-                                  className="css-1bs7c7i-Confirmation e1yl8cry0"
-                                  hide={true}
-                                  onDismiss={[Function]}
-                                  onSkip={[Function]}
-                                  orgId="org-slug"
-                                >
-                                  <div
-                                    className="css-1bs7c7i-Confirmation e1yl8cry0"
-                                    onClick={[Function]}
-                                  >
-                                    <Header>
-                                      <h4
-                                        className="css-cwdjtc-Header e1yl8cry1"
-                                      >
-                                        Want help?
-                                      </h4>
-                                    </Header>
-                                    <div>
-                                      <span
-                                        key="6"
-                                      >
-                                        <forwardRef<Button>
-                                          key="1"
-                                          priority="link"
-                                          to="/settings/org-slug/support/"
-                                        >
-                                          <Button
-                                            align="center"
-                                            disabled={false}
-                                            forwardRef={null}
-                                            priority="link"
-                                            to="/settings/org-slug/support/"
-                                          >
-                                            <StyledButton
-                                              aria-disabled={false}
-                                              disabled={false}
-                                              forwardRef={null}
-                                              onClick={[Function]}
-                                              priority="link"
-                                              role="button"
-                                              to="/settings/org-slug/support/"
-                                            >
-                                              <Component
-                                                aria-disabled={false}
-                                                className="css-1ilrgbi-StyledButton edwq9my0"
-                                                forwardRef={null}
-                                                onClick={[Function]}
-                                                role="button"
-                                                to="/settings/org-slug/support/"
-                                              >
-                                                <Link
-                                                  aria-disabled={false}
-                                                  className="css-1ilrgbi-StyledButton edwq9my0"
-                                                  onClick={[Function]}
-                                                  onlyActiveOnIndex={false}
-                                                  role="button"
-                                                  style={Object {}}
-                                                  to="/settings/org-slug/support/"
-                                                >
-                                                  <a
-                                                    aria-disabled={false}
-                                                    className="css-1ilrgbi-StyledButton edwq9my0"
-                                                    onClick={[Function]}
-                                                    role="button"
-                                                    style={Object {}}
-                                                  >
-                                                    <ButtonLabel
-                                                      align="center"
-                                                      priority="link"
-                                                    >
-                                                      <Component
-                                                        align="center"
-                                                        className="css-1igyjbb-ButtonLabel edwq9my1"
-                                                        priority="link"
-                                                      >
-                                                        <span
-                                                          className="css-1igyjbb-ButtonLabel edwq9my1"
-                                                        >
-                                                          <span
-                                                            key="0"
-                                                          >
-                                                            Go to support
-                                                          </span>
-                                                        </span>
-                                                      </Component>
-                                                    </ButtonLabel>
-                                                  </a>
-                                                </Link>
-                                              </Component>
-                                            </StyledButton>
-                                          </Button>
-                                        </forwardRef<Button>>
-                                        <span
-                                          key="2"
-                                        >
-                                           · 
-                                        </span>
-                                        <forwardRef<Button>
-                                          key="4"
-                                          onClick={[Function]}
-                                          priority="link"
-                                        >
-                                          <Button
-                                            align="center"
-                                            disabled={false}
-                                            forwardRef={null}
-                                            onClick={[Function]}
-                                            priority="link"
-                                          >
-                                            <StyledButton
-                                              aria-disabled={false}
-                                              disabled={false}
-                                              forwardRef={null}
-                                              onClick={[Function]}
-                                              priority="link"
-                                              role="button"
-                                            >
-                                              <Component
-                                                aria-disabled={false}
-                                                className="css-1ilrgbi-StyledButton edwq9my0"
-                                                forwardRef={null}
-                                                onClick={[Function]}
-                                                role="button"
-                                              >
-                                                <button
-                                                  aria-disabled={false}
-                                                  className="css-1ilrgbi-StyledButton edwq9my0"
-                                                  onClick={[Function]}
-                                                  role="button"
-                                                >
-                                                  <ButtonLabel
-                                                    align="center"
-                                                    priority="link"
-                                                  >
-                                                    <Component
-                                                      align="center"
-                                                      className="css-1igyjbb-ButtonLabel edwq9my1"
-                                                      priority="link"
-                                                    >
-                                                      <span
-                                                        className="css-1igyjbb-ButtonLabel edwq9my1"
-                                                      >
-                                                        <span
-                                                          key="3"
-                                                        >
-                                                          Skip
-                                                        </span>
-                                                      </span>
-                                                    </Component>
-                                                  </ButtonLabel>
-                                                </button>
-                                              </Component>
-                                            </StyledButton>
-                                          </Button>
-                                        </forwardRef<Button>>
-                                      </span>
-                                    </div>
-                                  </div>
-                                </Component>
-                              </Confirmation>
-                            </li>
-                          </Item>
-                        </TodoItem>
-                      </withRouter(TodoItem)>
-                    </WithOrganizationMockWrapper>
-                    <WithOrganizationMockWrapper
-                      key="setup_alert_rules"
-                      onSkip={[Function]}
-                      task={
-                        Object {
-                          "actionType": "app",
-                          "description": "Configure alerting rules to control error emails",
-                          "detailedDescription": "Receive Sentry alerts in Slack, PagerDuty, and more.",
-                          "display": true,
-                          "location": "/settings/org-slug/projects/:projectId/alerts/",
-                          "prereq": Array [
-                            1,
-                          ],
-                          "skippable": true,
-                          "task": "setup_alert_rules",
-                          "title": "Configure alerting rules",
-                        }
-                      }
-                    >
-                      <withRouter(TodoItem)
-                        onSkip={[Function]}
-                        organization={
-                          Object {
-                            "access": Array [
-                              "org:read",
-                              "org:write",
-                              "org:admin",
-                              "org:integrations",
-                              "project:read",
-                              "project:write",
-                              "project:admin",
-                              "team:read",
-                              "team:write",
-                              "team:admin",
-                            ],
-                            "features": Array [],
-                            "id": "3",
-                            "name": "Organization Name",
-                            "onboardingTasks": Array [],
-                            "projects": Array [],
-                            "scrapeJavaScript": true,
-                            "slug": "org-slug",
-                            "status": Object {
-                              "id": "active",
-                              "name": "active",
-                            },
-                            "teams": Array [],
-                          }
-                        }
-                        task={
-                          Object {
-                            "actionType": "app",
-                            "description": "Configure alerting rules to control error emails",
-                            "detailedDescription": "Receive Sentry alerts in Slack, PagerDuty, and more.",
-                            "display": true,
-                            "location": "/settings/org-slug/projects/:projectId/alerts/",
-                            "prereq": Array [
-                              1,
-                            ],
-                            "skippable": true,
-                            "task": "setup_alert_rules",
-                            "title": "Configure alerting rules",
-                          }
-                        }
-                      >
-                        <TodoItem
-                          location={
-                            Object {
-                              "query": Object {},
-                            }
-                          }
-                          onSkip={[Function]}
-                          organization={
-                            Object {
-                              "access": Array [
-                                "org:read",
-                                "org:write",
-                                "org:admin",
-                                "org:integrations",
-                                "project:read",
-                                "project:write",
-                                "project:admin",
-                                "team:read",
-                                "team:write",
-                                "team:admin",
-                              ],
-                              "features": Array [],
-                              "id": "3",
-                              "name": "Organization Name",
-                              "onboardingTasks": Array [],
-                              "projects": Array [],
-                              "scrapeJavaScript": true,
-                              "slug": "org-slug",
-                              "status": Object {
-                                "id": "active",
-                                "name": "active",
-                              },
-                              "teams": Array [],
-                            }
-                          }
-                          router={
-                            Object {
-                              "createHref": [MockFunction] {
-                                "calls": Array [
-                                  Array [
-                                    "/settings/account/details/",
-                                  ],
-                                  Array [
-                                    "/settings/account/",
-                                  ],
-                                  Array [
-                                    "/settings/account/api/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/projects/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/issues/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/releases/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/user-feedback/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/activity/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/stats/",
-                                  ],
-                                  Array [
-                                    "/settings/org-slug/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/projects/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/issues/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/releases/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/user-feedback/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/activity/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/stats/",
-                                  ],
-                                  Array [
-                                    "/settings/org-slug/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/projects/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/issues/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/releases/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/user-feedback/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/activity/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/stats/",
-                                  ],
-                                  Array [
-                                    "/settings/org-slug/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/projects/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/issues/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/releases/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/user-feedback/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/activity/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/stats/",
-                                  ],
-                                  Array [
-                                    "/settings/org-slug/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/projects/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/issues/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/releases/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/user-feedback/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/activity/",
-                                  ],
-                                  Array [
-                                    "/organizations/org-slug/stats/",
-                                  ],
-                                  Array [
-                                    "/settings/org-slug/",
-                                  ],
-                                  Array [
-                                    "/settings/org-slug/support/",
-                                  ],
-                                  Array [
-                                    "/settings/org-slug/support/",
-                                  ],
-                                  Array [
-                                    "/settings/org-slug/support/",
-                                  ],
-                                  Array [
-                                    "/settings/org-slug/support/",
-                                  ],
-                                  Array [
-                                    "/settings/org-slug/support/",
-                                  ],
-                                  Array [
-                                    "/settings/org-slug/support/",
-                                  ],
-                                  Array [
-                                    "/settings/org-slug/support/",
-                                  ],
-                                ],
-                                "results": Array [
-                                  Object {
-                                    "type": "return",
-                                    "value": undefined,
-                                  },
-                                  Object {
-                                    "type": "return",
-                                    "value": undefined,
-                                  },
-                                  Object {
-                                    "type": "return",
-                                    "value": undefined,
-                                  },
-                                  Object {
-                                    "type": "return",
-                                    "value": undefined,
-                                  },
-                                  Object {
-                                    "type": "return",
-                                    "value": undefined,
-                                  },
-                                  Object {
-                                    "type": "return",
-                                    "value": undefined,
-                                  },
-                                  Object {
-                                    "type": "return",
-                                    "value": undefined,
-                                  },
-                                  Object {
-                                    "type": "return",
-                                    "value": undefined,
-                                  },
-                                  Object {
-                                    "type": "return",
-                                    "value": undefined,
-                                  },
-                                  Object {
-                                    "type": "return",
-                                    "value": undefined,
-                                  },
-                                  Object {
-                                    "type": "return",
-                                    "value": undefined,
-                                  },
-                                  Object {
-                                    "type": "return",
-                                    "value": undefined,
-                                  },
-                                  Object {
-                                    "type": "return",
-                                    "value": undefined,
-                                  },
-                                  Object {
-                                    "type": "return",
-                                    "value": undefined,
-                                  },
-                                  Object {
-                                    "type": "return",
-                                    "value": undefined,
-                                  },
-                                  Object {
-                                    "type": "return",
-                                    "value": undefined,
-                                  },
-                                  Object {
-                                    "type": "return",
-                                    "value": undefined,
-                                  },
-                                  Object {
-                                    "type": "return",
-                                    "value": undefined,
-                                  },
-                                  Object {
-                                    "type": "return",
-                                    "value": undefined,
-                                  },
-                                  Object {
-                                    "type": "return",
-                                    "value": undefined,
-                                  },
-                                  Object {
-                                    "type": "return",
-                                    "value": undefined,
-                                  },
-                                  Object {
-                                    "type": "return",
-                                    "value": undefined,
-                                  },
-                                  Object {
-                                    "type": "return",
-                                    "value": undefined,
-                                  },
-                                  Object {
-                                    "type": "return",
-                                    "value": undefined,
-                                  },
-                                  Object {
-                                    "type": "return",
-                                    "value": undefined,
-                                  },
-                                  Object {
-                                    "type": "return",
-                                    "value": undefined,
-                                  },
-                                  Object {
-                                    "type": "return",
-                                    "value": undefined,
-                                  },
-                                  Object {
-                                    "type": "return",
-                                    "value": undefined,
-                                  },
-                                  Object {
-                                    "type": "return",
-                                    "value": undefined,
-                                  },
-                                  Object {
-                                    "type": "return",
-                                    "value": undefined,
-                                  },
-                                  Object {
-                                    "type": "return",
-                                    "value": undefined,
-                                  },
-                                  Object {
-                                    "type": "return",
-                                    "value": undefined,
-                                  },
-                                  Object {
-                                    "type": "return",
-                                    "value": undefined,
-                                  },
-                                  Object {
-                                    "type": "return",
-                                    "value": undefined,
-                                  },
-                                  Object {
-                                    "type": "return",
-                                    "value": undefined,
-                                  },
-                                  Object {
-                                    "type": "return",
-                                    "value": undefined,
-                                  },
-                                  Object {
-                                    "type": "return",
-                                    "value": undefined,
-                                  },
-                                  Object {
-                                    "type": "return",
-                                    "value": undefined,
-                                  },
-                                  Object {
-                                    "type": "return",
-                                    "value": undefined,
-                                  },
-                                  Object {
-                                    "type": "return",
-                                    "value": undefined,
-                                  },
-                                  Object {
-                                    "type": "return",
-                                    "value": undefined,
-                                  },
-                                  Object {
-                                    "type": "return",
-                                    "value": undefined,
-                                  },
-                                  Object {
-                                    "type": "return",
-                                    "value": undefined,
-                                  },
-                                  Object {
-                                    "type": "return",
-                                    "value": undefined,
-                                  },
-                                  Object {
-                                    "type": "return",
-                                    "value": undefined,
-                                  },
-                                ],
-                              },
-                              "go": [MockFunction],
-                              "goBack": [MockFunction],
-                              "goForward": [MockFunction],
-                              "isActive": [MockFunction],
-                              "listen": [MockFunction],
-                              "location": Object {
-                                "query": Object {},
-                              },
-                              "push": [MockFunction],
-                              "replace": [MockFunction],
-                              "setRouteLeaveHook": [MockFunction],
-                            }
-                          }
-                          task={
-                            Object {
-                              "actionType": "app",
-                              "description": "Configure alerting rules to control error emails",
-                              "detailedDescription": "Receive Sentry alerts in Slack, PagerDuty, and more.",
-                              "display": true,
-                              "location": "/settings/org-slug/projects/:projectId/alerts/",
-                              "prereq": Array [
-                                1,
-                              ],
-                              "skippable": true,
-                              "task": "setup_alert_rules",
-                              "title": "Configure alerting rules",
-                            }
-                          }
-                        >
-                          <Item>
-                            <li
-                              className="css-1tc3zvc-Item ev4hf7u0"
-                            >
-                              <Content
-                                blur={false}
-                              >
-                                <div
-                                  className="css-9av8oo-Content ev4hf7u1"
-                                >
-                                  <Action
-                                    data-test-id="setup_alert_rules"
-                                    onClick={[Function]}
-                                  >
-                                    <ActionTarget
-                                      data-test-id="setup_alert_rules"
-                                      onClick={[Function]}
-                                    >
-                                      <div
-                                        className="css-kvrkkk-ActionTarget ev4hf7u6"
-                                        data-test-id="setup_alert_rules"
-                                        onClick={[Function]}
-                                      >
-                                        <Checkbox>
-                                          <div
-                                            className="css-k6399d-Checkbox ev4hf7u2"
-                                          />
-                                        </Checkbox>
-                                        <ItemHeader>
-                                          <h4
-                                            className="css-1x2o9i9-ItemHeader ev4hf7u7"
-                                          >
-                                            Configure alerting rules
-                                          </h4>
-                                        </ItemHeader>
-                                        <Description>
-                                          <p
-                                            className="css-1qxrlo5-Description ev4hf7u4"
-                                          >
-                                            Configure alerting rules to control error emails. Receive Sentry alerts in Slack, PagerDuty, and more.
                                           </p>
                                         </Description>
                                       </div>

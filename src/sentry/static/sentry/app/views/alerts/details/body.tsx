@@ -178,9 +178,7 @@ export default class DetailsBody extends React.Component<Props> {
           <ActivityPageContent>
             <StyledNavTabs underlined>
               <li className="active">
-                <Link to="#" onClick={this.handlePreventDefault}>
-                  {t('Activity')}
-                </Link>
+                <Link onClick={this.handlePreventDefault}>{t('Activity')}</Link>
               </li>
 
               <SeenByTab>

@@ -14,7 +14,12 @@ describe('MemberBadge', function() {
 
     expect(wrapper.find('StyledName').prop('children')).toBe('Foo Bar');
     expect(wrapper.find('StyledEmail').prop('children')).toBe('foo@example.com');
-    expect(wrapper.find('StyledName Link')).toHaveLength(1);
+    expect(
+      wrapper
+        .find('StyledName')
+        .find('[data-test-id="member-badge-styled-name-link"]')
+        .hostNodes()
+    ).toHaveLength(1);
     expect(wrapper.find('StyledAvatar')).toHaveLength(1);
   });
 
@@ -27,7 +32,7 @@ describe('MemberBadge', function() {
   it('does not use a link when orgId = null', function() {
     const wrapper = mount(<MemberBadge member={member} useLink />);
 
-    expect(wrapper.find('StyledName Link')).toHaveLength(0);
+    expect(wrapper.find('StyledName Link').hostNodes()).toHaveLength(0);
   });
 
   it('can display alternate display names/emails', function() {
