@@ -1,3 +1,4 @@
+import {Link} from 'react-router';
 import PropTypes from 'prop-types';
 import React from 'react';
 import createReactClass from 'create-react-class';
@@ -6,7 +7,7 @@ import moment from 'moment-timezone';
 import {t} from 'app/locale';
 import ConfigStore from 'app/stores/configStore';
 import DateTime from 'app/components/dateTime';
-import Link from 'app/components/links/link';
+import ExternalLink from 'app/components/links/externalLink';
 import FileSize from 'app/components/fileSize';
 import SentryTypes from 'app/sentryTypes';
 import Tooltip from 'app/components/tooltip';
@@ -81,8 +82,6 @@ const GroupEventToolbar = createReactClass({
 
   render() {
     const evt = this.props.event;
-
-    console.log('aqui');
 
     const {orgId, location} = this.props;
     const groupId = this.props.group.id;
@@ -182,9 +181,9 @@ const GroupEventToolbar = createReactClass({
               {isOverLatencyThreshold && <span className="icon-alert" />}
             </span>
           </Tooltip>
-          <Link to={jsonUrl} className="json-link" external>
+          <ExternalLink href={jsonUrl} className="json-link">
             {'JSON'} (<FileSize bytes={evt.size} />)
-          </Link>
+          </ExternalLink>
         </span>
       </div>
     );
