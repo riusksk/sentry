@@ -68,7 +68,7 @@ export type LightWeightOrganization = OrganizationSummary & {
     maxRate: number | null;
   };
   defaultRole: string;
-  experiments: ActiveExperiments;
+  experiments: Partial<ActiveExperiments>;
   allowJoinRequests: boolean;
   scrapeJavaScript: boolean;
   isDefault: boolean;
@@ -256,6 +256,10 @@ export type EventsStatsData = [number, {count: number}[]][];
 export type EventsStats = {
   data: EventsStatsData;
   totals?: {count: number};
+};
+
+export type YAxisEventsStats = {
+  [yAxisName: string]: EventsStats;
 };
 
 // Avatars are a more primitive version of User.
@@ -920,9 +924,9 @@ export type OnboardingTaskDescriptor = {
 export type OnboardingTaskStatus = {
   task: OnboardingTaskKey;
   status: 'skipped' | 'pending' | 'complete';
-  user: string | null;
-  dateCompleted: string;
-  data: object;
+  user?: string | null;
+  dateCompleted?: string;
+  data?: object;
 };
 
 export type OnboardingTask = OnboardingTaskStatus & OnboardingTaskDescriptor;

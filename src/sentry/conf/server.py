@@ -1771,3 +1771,8 @@ SYMBOLICATOR_PROCESS_EVENT_HARD_TIMEOUT = 1800
 
 # Log warning when process_event is taking more than n seconds to process event
 SYMBOLICATOR_PROCESS_EVENT_WARN_TIMEOUT = 120
+
+# Block process_event for this many seconds to wait for a response from
+# symbolicator. If too low, too many events up in the sleep queue. If too high,
+# process_event might backlog and affect events from other platforms.
+SYMBOLICATOR_POLL_TIMEOUT = 4
